@@ -25,7 +25,6 @@ hr.light {
 }
 
 a {
-    color: #04B4AE;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -169,7 +168,7 @@ aside {
 }
 
 .text-primary {
-    color: ##04B4AE;
+    color: #000000;
 }
 
 .no-gutter > [class*=col-] {
