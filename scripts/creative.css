@@ -5,8 +5,8 @@
  */
 
 @font-face {
-  font-family: "Droid Serif";
-  src: url(../fonts/DroidSerif.ttf) format("truetype");
+  font-family: "Droid Serif Bold";
+  src: url(../fonts/DroidSerif-Bold.ttf) format("truetype");
 }
 
 html,
@@ -16,7 +16,7 @@ body {
 }
 
 body {
-    font-family: "Droid Serif";
+    font-family: "Oxygen";
 }
 
 hr {
@@ -43,22 +43,26 @@ a:focus {
 h1,
 h2,
 h3,
-h4,
 h5,
 h6 {
-    font-family: 'Open Sans'
+    font-family: 'Fira Sans'
+}
+
+h4 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 0px;
 }
 
 p {
     margin-bottom: 5px;
     margin-top: 0px;
-    font-size: 17px;
+    font-size: 18px;
     line-height: normal;
-    font-family: "Droid Serif";
 }
 
 ul {
-  font-family: "Open Sans";
   font-size: 16px;
   margin-top: 0px;
   margin-left: 0px;
@@ -105,6 +109,9 @@ aside {
 }
 
 .section-heading {
+    font-family: "Fira Sans";
+    font-weight: bold;
+    font-size: 35px;
     margin-top: 0;
 }
 
