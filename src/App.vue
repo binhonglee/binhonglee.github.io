@@ -1,20 +1,24 @@
 <template>
   <div id="app">
     <infobox/>
+    <genericboxes :items="about"/>
     <bulletedtextbox :items="education"/>
     <bulletedtextbox :items="experiences"/>
-    <bulletedtextbox :items="community"/>
+    <bulletedtextbox :items="community" :lineHeight="'close'"/>
+    <bulletedtextbox :items="awards" :lineHeight="'close'"/>
   </div>
 </template>
 
 <script>
 import infobox from './components/Infobox'
 import bulletedtextbox from './components/BulletedTextBox'
+import genericboxes from './components/GenericBoxes'
 export default {
   name: 'app',
   components: {
     infobox,
-    bulletedtextbox
+    bulletedtextbox,
+    genericboxes
   },
   data () {
     return {
@@ -43,7 +47,7 @@ export default {
             ]
           },
           {
-            primary: 'American Degree Transfer Program (Applied Science)',
+            primary: 'American Degree Transfer Program',
             secondary: 'INTI International College Penang',
             date: 'April 2012 - January 2014',
             details: [
@@ -118,9 +122,68 @@ export default {
             date: 'January 2017'
           },
           {
+            primary: 'Mentor',
+            secondary: 'Fulton Furnace Fallout',
+            date: 'Fall 2016'
+          },
+          {
             primary: 'Shaper',
             secondary: 'Global Shapers Community, George Town Hub',
             date: 'March 2014 - August 2014'
+          }
+        ]
+      },
+      about: {
+        name: 'About me',
+        things: [
+          'I recently graduated from Arizona State University with a Bachelor\'s Degree in Software Engineering on May 2017 and is currently seeking for an entry level full time Software Engineering / Software Development opportunity.',
+          'Programming languages:<br/><b>Java, C++, JavaScript</b>, Kotlin, Android (Java/Kotlin), Shell (Bash), C, Python, Powershell, Matlab',
+          'Other skills / tools include:<br>Maven Apache, Git, ReactJS, Vue.js, CI (Travis-CI / circleCI), ExpressJS, Alexa (node.js), CodeCov, Raspberry Pi, Mac, Linux, Windows, Apache Ant, Firebase, Microcontroller',
+          '<figure><embed src="https://wakatime.com/share/@binhonglee/9272127a-c588-4102-b229-37322aa12233.svg" style="max-width: 700px"></embed></figure>'
+        ]
+      },
+      awards: {
+        name: 'Awards',
+        things: [
+          {
+            primary: 'Changemaker Entrepreneur of the Year',
+            secondary: 'Pitchfork awards',
+            date: '2016'
+          },
+          {
+            primary: 'Finalist',
+            secondary: 'Pakis Social Entrepreneurial Challenge',
+            date: '2016'
+          },
+          {
+            primary: '2nd place',
+            secondary: 'Startup Weekend Phoenix',
+            date: '2015'
+          },
+          {
+            primary: 'Grand Prize Award Winner',
+            secondary: 'Changemaker Innovation Challenge',
+            date: '2015'
+          },
+          {
+            primary: '1st place',
+            secondary: 'Hacks4Humanity 2014',
+            date: '2014'
+          },
+          {
+            primary: 'International Success Award',
+            secondary: 'New American University Scholar',
+            date: '2014'
+          },
+          {
+            primary: 'Unity Game Jam Penang 2014',
+            secondary: '1st Place',
+            date: '2014'
+          },
+          {
+            primary: 'Gold Medal',
+            secondary: 'World Robot Olympiad',
+            date: '2010'
           }
         ]
       }

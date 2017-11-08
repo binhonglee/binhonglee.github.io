@@ -2,9 +2,9 @@
     <div class="bulletedtextbox">
         <h2>{{items.name}}</h2>
         <div class="left-lining">
-            <div class="items" v-for="item in items.things" v-bind:key="item.primary">
-                <p v-if="item.primary === ''" v-html="item.secondary"/>
-                <p v-else><b v-html="item.primary"/> - <a v-html="item.secondary"/></p>
+            <div v-bind:class="items.name" v-for="item in items.things" v-bind:key="item.primary">
+                <a v-if="item.primary === ''" v-html="item.secondary"/>
+                <a v-else><b v-html="item.primary"/> - <a v-html="item.secondary"/></a>
                 <i>({{item.date}})</i>
                 <ul>
                     <li v-for="detail in item.details" v-bind:key="detail" v-html="detail"/>
@@ -20,7 +20,21 @@ export default {
   props: {
       items: {
           type: Object
+      },
+      lineHeight: {
+          type: String,
+          default: 'wide'
       }
+  },
+  mounted: function () {
+    var toChange = document.getElementsByClassName(this.items.name)
+    while (toChange.length > 0) {
+        if (this.lineHeight == 'close') {
+            toChange[0].className = 'closeItems';
+        } else {
+            toChange[0].className = 'wideItems';
+        }
+    }
   }
 }
 </script>
@@ -32,7 +46,7 @@ export default {
     margin-left: auto;
     margin-right: auto;
     max-width: 800px;
-    padding-top: 25px;
+    padding-top: 20px;
     padding-bottom: 5px;
 }
 
@@ -40,13 +54,18 @@ export default {
     border-left-width: 5px;
     border-left-style: solid;
     border-left-color: rgb(4, 180, 95);
-    padding-left: 20px;
     margin: 10px 0 10px;
+    padding: 10px 0 10px 20px;
 }
 
-.items {
+.wideItems {
     text-align: left;
-    padding: 8px 0 8px 0; 
+    padding: 10px 0 10px 0; 
+}
+
+.closeItems {
+    text-align: left;
+    padding: 1px 0 1px 0
 }
 
 h2 {
@@ -57,7 +76,11 @@ h2 {
     margin: 0px;
 }
 
-p {
+i {
+    float: right;
+}
+
+a {
     font-size: 17px;
     line-height: normal;
     margin: 0px;
