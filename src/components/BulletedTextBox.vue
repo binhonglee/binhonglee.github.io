@@ -1,11 +1,11 @@
 <template>
-    <div class="bulletedtextbox">
+    <div class="bulletedtextbox defaultboxes">
         <h2>{{items.name}}</h2>
         <div class="left-lining">
             <div v-bind:class="items.name" v-for="item in items.things" v-bind:key="item.primary">
                 <a v-if="item.primary === ''" v-html="item.secondary"/>
                 <a v-else><b v-html="item.primary"/> - <a v-html="item.secondary"/></a>
-                <i>({{item.date}})</i>
+                <i class="date">({{item.date}})</i>
                 <ul>
                     <li v-for="detail in item.details" v-bind:key="detail" v-html="detail"/>
                 </ul>
@@ -40,24 +40,6 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Oxygen');
-.bulletedtextbox {
-    font-family: 'Oxygen';
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 800px;
-    padding-top: 20px;
-    padding-bottom: 5px;
-}
-
-.left-lining {
-    border-left-width: 5px;
-    border-left-style: solid;
-    border-left-color: rgb(4, 180, 95);
-    margin: 10px 0 10px;
-    padding: 10px 0 10px 20px;
-}
-
 .wideItems {
     text-align: left;
     padding: 10px 0 10px 0; 
@@ -66,18 +48,6 @@ export default {
 .closeItems {
     text-align: left;
     padding: 1px 0 1px 0
-}
-
-h2 {
-    font-family: 'Fira Sans';
-    font-weight: bold;
-    font-size: 24px;
-    letter-spacing: -0.5px;
-    margin: 0px;
-}
-
-i {
-    float: right;
 }
 
 a {

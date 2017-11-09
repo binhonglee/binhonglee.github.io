@@ -2,8 +2,8 @@
     <div class="infobox">
         <a href="https://binhong.me">
             <img class="img-circle" src="../../images/profile.jpg" style="border-radius: 50%; width: 200px; margin-bottom: 0px; color: #04B45F;"/>
+            <h1>{{ name }}</h1>
         </a>
-        <h1>{{ name }}</h1>
         <div class="titles">
             B.Sc. Software Engineering, Arizona State University
         </div>
@@ -37,10 +37,9 @@ export default {
 
 <style scoped>
 @import url('../../font-awesome/styles.css');
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Oxygen');
 .infobox {
     margin-top: -20px;
-    padding-top: 30px;
+    padding-top: 40px;
     padding-bottom: 20px;
     width: 100%;
     background: black;
@@ -52,6 +51,10 @@ h1 {
     font-weight: bold;
     margin: 5px;
     color: #04B45F;
+}
+
+h1:hover {
+    color:turquoise;
 }
 
 .titles {

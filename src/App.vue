@@ -4,21 +4,27 @@
     <genericboxes :items="about"/>
     <bulletedtextbox :items="education"/>
     <bulletedtextbox :items="experiences"/>
+    <imagelabel :items="projects"/>
     <bulletedtextbox :items="community" :lineHeight="'close'"/>
     <bulletedtextbox :items="awards" :lineHeight="'close'"/>
+    <imagelabel :items="media"/>
   </div>
 </template>
 
 <script>
+import navbar from './components/NavBar'
 import infobox from './components/Infobox'
 import bulletedtextbox from './components/BulletedTextBox'
 import genericboxes from './components/GenericBoxes'
+import imagelabel from './components/ImageLabel'
 export default {
   name: 'app',
   components: {
+    navbar,
     infobox,
     bulletedtextbox,
-    genericboxes
+    genericboxes,
+    imagelabel
   },
   data () {
     return {
@@ -186,6 +192,76 @@ export default {
             date: '2010'
           }
         ]
+      },
+      projects: {
+        name: 'Projects',
+        things: [
+          {
+            url: 'https://breakups-webapp.herokuapp.com',
+            image: 'https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/23031498_10210808324385043_1385846761311806638_n.jpg?oh=9e2a8d4fb8b471438470c0aeab0b2683&oe=5A991A1C',
+            primary: 'Breakups',
+            secondary: 'JavaScript [node.js, ReactJS, ExpressJS]<br>Android [Kotlin]'
+          },
+          {
+            url: 'https://github.com/binhonglee/Dota2-Random',
+            image: 'https://binhonglee.github.io/images/dota2Random.png',
+            primary: 'Dota2 Random',
+            secondary: 'Javascript [node.js, alexa-sdk]<br>Travis-CI, CodeCov'
+          },
+          {
+            url: 'https://binhonglee.github.io/LibrarySystem',
+            image: 'https://binhonglee.github.io/images/LibrarySystem.png',
+            primary: 'Library System',
+            secondary: 'Java [swing, JUnit], Maven Apache<br>Travis-CI, CodeCov'
+          },
+          {
+            url: 'https://binhonglee.github.io/BikeSafetyWithPi',
+            image: 'https://binhonglee.github.io/images/sunriseac.png',
+            primary: 'Sunrise Alarm Clock',
+            secondary: 'C, ATMEGA168P'
+          },
+          {
+            url: 'https://binhonglee.github.io/TicketingSystem',
+            image: 'https://binhonglee.github.io/images/TicketingSystem.png',
+            primary: 'Ticketing System',
+            secondary: 'C++, Apache Ant, Travis-CI'
+          },
+          {
+            url: 'https://binhong.me/7thLoop',
+            image: 'https://binhonglee.github.io/images/7thloop.png',
+            primary: '7thLoop',
+            secondary: 'JavaScript [Quintus]'
+          }
+        ]
+      },
+      media: {
+        name: "Media",
+        things: [
+          {
+            url: 'https://www.youtube.com/watch?v=lrek6FrYVrg',
+            image: 'https://binhonglee.github.io/images/fox10.jpg'
+          },
+          {
+            url: 'https://asunow.asu.edu/content/changemaker-challenge-winners-reach-out-those-expressing-thoughts-suicide-social-media',
+            image: 'https://binhonglee.github.io/images/asu.jpg'
+          },
+          {
+            url: 'http://news.sinchew.com.my/node/183120',
+            image: 'https://binhonglee.github.io/images/sinchew.png'
+          },
+          {
+            url: 'http://www.statepress.com/article/2015/09/ark-humanity-app-save-lives',
+            image: 'https://binhonglee.github.io/images/statepress.jpg'
+          },
+          {
+            url: 'https://www.facebook.com/notes/457398051261/',
+            image: 'https://binhonglee.github.io/images/kwongwah.jpg'
+          },
+          {
+            url: 'https://binhonglee.github.io/images/skor_news.jpg',
+            image: 'https://binhonglee.github.io/images/berita_harian.jpg'
+          }
+        ]
       }
     }
   }
@@ -193,12 +269,41 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Oxygen');
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+.left-lining {
+    border-left-width: 5px;
+    border-left-style: solid;
+    border-left-color: rgb(4, 180, 95);
+    margin: 10px 0 10px;
+    padding: 10px 0 10px 20px;
+}
+
+.defaultboxes {
+    font-family: 'Oxygen';
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    padding-top: 25px;
+    padding-bottom: 5px;
+}
+
+.date {
+    float: right;
+}
+
+h2 {
+    font-family: 'Fira Sans';
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: -0.5px;
+    margin: 0px;
 }
 </style>
