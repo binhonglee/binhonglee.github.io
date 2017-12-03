@@ -36,10 +36,9 @@ export default {
 </script>
 
 <style scoped>
-@import url('../../font-awesome/styles.css');
 .infobox {
-    margin-top: -20px;
-    padding-top: 40px;
+    margin-top: 0px;
+    padding-top: 20px;
     padding-bottom: 20px;
     width: 100%;
     background: black;
@@ -64,7 +63,6 @@ h1:hover {
 }
 
 .icons {
-    position: relative;
     margin-top: 10px;
     margin-right: auto;
     margin-left: auto;

@@ -1,30 +1,34 @@
 <template>
   <div id="app">
-    <infobox/>
-    <genericboxes :items="about"/>
-    <bulletedtextbox :items="education"/>
-    <bulletedtextbox :items="experiences"/>
-    <imagelabel :items="projects"/>
-    <bulletedtextbox :items="community" :lineHeight="'close'"/>
-    <bulletedtextbox :items="awards" :lineHeight="'close'"/>
-    <imagelabel :items="media"/>
+    <heading/>
+    <infobox id="top"/>
+    <genericboxes :items="about" id="about"/>
+    <bulletedtextbox :items="experiences" id="experiences"/>
+    <bulletedtextbox :items="education" id="education"/>
+    <imagelabel :items="projects" id="projects"/>
+    <bulletedtextbox :items="community" :lineHeight="'close'" id="community"/>
+    <bulletedtextbox :items="awards" :lineHeight="'close'" id="awards"/>
+    <imagelabel :items="media" id="media"/>
+    <contacts id="bottom"/>
   </div>
 </template>
 
 <script>
-import navbar from './components/NavBar'
+import heading from './components/Heading'
 import infobox from './components/Infobox'
 import bulletedtextbox from './components/BulletedTextBox'
 import genericboxes from './components/GenericBoxes'
 import imagelabel from './components/ImageLabel'
+import contacts from './components/Contacts'
 export default {
   name: 'app',
   components: {
-    navbar,
+    heading,
     infobox,
     bulletedtextbox,
     genericboxes,
-    imagelabel
+    imagelabel,
+    contacts
   },
   data () {
     return {
@@ -199,19 +203,19 @@ export default {
           {
             url: 'https://breakups-webapp.herokuapp.com',
             image: 'https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/23031498_10210808324385043_1385846761311806638_n.jpg?oh=9e2a8d4fb8b471438470c0aeab0b2683&oe=5A991A1C',
-            primary: 'Breakups',
+            primary: 'Breakups (Webapp)',
             secondary: 'JavaScript [node.js, ReactJS, ExpressJS]<br>Android [Kotlin]'
           },
           {
             url: 'https://github.com/binhonglee/Dota2-Random',
             image: 'https://binhonglee.github.io/images/dota2Random.png',
-            primary: 'Dota2 Random',
+            primary: 'Dota2 Random (Alexa)',
             secondary: 'Javascript [node.js, alexa-sdk]<br>Travis-CI, CodeCov'
           },
           {
             url: 'https://binhonglee.github.io/LibrarySystem',
             image: 'https://binhonglee.github.io/images/LibrarySystem.png',
-            primary: 'Library System',
+            primary: 'Library System (Java)',
             secondary: 'Java [swing, JUnit], Maven Apache<br>Travis-CI, CodeCov'
           },
           {
@@ -223,13 +227,13 @@ export default {
           {
             url: 'https://binhonglee.github.io/TicketingSystem',
             image: 'https://binhonglee.github.io/images/TicketingSystem.png',
-            primary: 'Ticketing System',
+            primary: 'Ticketing System (CLI)',
             secondary: 'C++, Apache Ant, Travis-CI'
           },
           {
             url: 'https://binhong.me/7thLoop',
             image: 'https://binhonglee.github.io/images/7thloop.png',
-            primary: '7thLoop',
+            primary: '7thLoop (Webapp)',
             secondary: 'JavaScript [Quintus]'
           }
         ]
@@ -269,6 +273,7 @@ export default {
 </script>
 
 <style>
+@import url('../font-awesome/styles.css');
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans|Oxygen');
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
