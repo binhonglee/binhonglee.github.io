@@ -273,7 +273,7 @@ export default {
 </script>
 
 <style>
-@import url('../font-awesome/styles.css');
+@import url('https://raw.githubusercontent.com/binhonglee/binhonglee.github.io/Rebuild/font-awesome/styles.css');
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans|Oxygen');
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;

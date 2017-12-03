@@ -1,7 +1,7 @@
 <template>
     <div class="infobox">
         <a href="https://binhong.me">
-            <img class="img-circle" src="../../images/profile.jpg" style="border-radius: 50%; width: 200px; margin-bottom: 0px; color: #04B45F;"/>
+            <img class="img-circle" src="https://binhonglee.github.io/images/profile.jpg" style="border-radius: 50%; width: 200px; margin-bottom: 0px; color: #04B45F;"/>
             <h1>{{ name }}</h1>
         </a>
         <div class="titles">
