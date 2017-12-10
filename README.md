@@ -1,5 +1,6 @@
 # Personal website
 
+[![Dependency Status](https://dependencyci.com/github/binhonglee/binhonglee.github.io/badge)](https://dependencyci.com/github/binhonglee/binhonglee.github.io)
 > binhonglee.github.io (Just a little personal experiment with Vue.js)
 
 ## Build Setup
