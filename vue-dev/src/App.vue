@@ -32,6 +32,15 @@ export default {
   },
   data () {
     return {
+      about: {
+        name: 'About me',
+        things: [
+          'Recent graduate from Arizona State University with a Bachelor\'s Degree in Software Engineering.<br>Currently seeking for full time Software Engineering / Software Development opportunity.',
+          'Programming languages:<br/><b>Java, C++, JavaScript</b>, Kotlin, Android (Java/Kotlin), Shell (Bash), C, Python, Powershell, Matlab',
+          'Other skills / tools include:<br>Maven Apache, Git, ReactJS, Vue.js, CI (Travis-CI / circleCI), ExpressJS, Alexa (node.js), CodeCov, Raspberry Pi, Mac, Linux, Windows, Apache Ant, Firebase, Microcontroller',
+          '<figure><embed src="https://wakatime.com/share/@binhonglee/9272127a-c588-4102-b229-37322aa12233.svg" style="max-width: 700px"></embed></figure>'
+        ]
+      },
       education: {
         name: 'Education',
         things: [
@@ -71,6 +80,14 @@ export default {
       experiences: {
         name: 'Experiences',
         things: [
+          {
+            primary: 'Siri Language Engineer (Contract)',
+            secondary: 'Apple Inc.',
+            date: 'December 2017 - Present',
+            details: [
+              'Improve the user experience for Siri users Malay language (mostly Malaysians, Indonesians and Singaporeans) across all platform '
+            ]
+          },
           {
             primary: 'Founding Software Engineer',
             secondary: 'Humanity X Technologies LLC',
@@ -141,15 +158,6 @@ export default {
             secondary: 'Global Shapers Community, George Town Hub',
             date: 'March 2014 - August 2014'
           }
-        ]
-      },
-      about: {
-        name: 'About me',
-        things: [
-          'I recently graduated from Arizona State University with a Bachelor\'s Degree in Software Engineering on May 2017 and is currently seeking for an entry level full time Software Engineering / Software Development opportunity.',
-          'Programming languages:<br/><b>Java, C++, JavaScript</b>, Kotlin, Android (Java/Kotlin), Shell (Bash), C, Python, Powershell, Matlab',
-          'Other skills / tools include:<br>Maven Apache, Git, ReactJS, Vue.js, CI (Travis-CI / circleCI), ExpressJS, Alexa (node.js), CodeCov, Raspberry Pi, Mac, Linux, Windows, Apache Ant, Firebase, Microcontroller',
-          '<figure><embed src="https://wakatime.com/share/@binhonglee/9272127a-c588-4102-b229-37322aa12233.svg" style="max-width: 700px"></embed></figure>'
         ]
       },
       awards: {
@@ -273,7 +281,6 @@ export default {
 </script>
 
 <style>
-@import url('https://raw.githubusercontent.com/binhonglee/binhonglee.github.io/Rebuild/font-awesome/styles.css');
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans|Oxygen');
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;

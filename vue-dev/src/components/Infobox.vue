@@ -5,7 +5,7 @@
             <h1>{{ name }}</h1>
         </a>
         <div class="titles">
-            B.Sc. Software Engineering, Arizona State University
+            Siri Language Engineer @ Apple Inc.<br>B.Sc. Software Engineering, Arizona State University
         </div>
         <div class="icons">
             <a href="https://www.facebook.com/binhonglee">
@@ -36,6 +36,7 @@ export default {
 </script>
 
 <style scoped>
+@import url('../../font-awesome/styles.css');
 .infobox {
     margin-top: 0px;
     padding-top: 20px;
