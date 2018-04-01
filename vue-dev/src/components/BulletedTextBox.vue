@@ -42,7 +42,7 @@ export default {
 <style scoped>
 .wideItems {
     text-align: left;
-    padding: 10px 0 10px 0; 
+    padding: 10px 0 10px 0;
 }
 
 .closeItems {
@@ -66,4 +66,3 @@ li {
     padding-bottom: 5px;
 }
 </style>
-
