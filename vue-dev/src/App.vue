@@ -7,6 +7,9 @@
     <bulletedtextbox :items="education" id="education"/>
     <imagelabel :items="projects" id="projects"/>
     <bulletedtextbox :items="community" :lineHeight="'close'" id="community"/>
+    <!--
+    <bulletedtextbox :items="articles" :lineHeight="'close'" id="articles"/>
+    -->
     <bulletedtextbox :items="awards" :lineHeight="'close'" id="awards"/>
     <imagelabel :items="media" id="media"/>
     <contacts id="bottom"/>
@@ -35,9 +38,8 @@ export default {
       about: {
         name: 'About me',
         things: [
-          'Recent graduate from Arizona State University with a Bachelor\'s Degree in Software Engineering.<br>Currently seeking for full time Software Engineering / Software Development opportunity.',
           'Programming languages:<br/><b>Java, C++, JavaScript</b>, Kotlin, Android (Java/Kotlin), Shell (Bash), C, Python, Powershell, Matlab',
-          'Other skills / tools include:<br>Maven Apache, Git, ReactJS, Vue.js, CI (Travis-CI / circleCI), ExpressJS, Alexa (node.js), CodeCov, Raspberry Pi, Mac, Linux, Windows, Apache Ant, Firebase, Microcontroller',
+          'Other skills / tools include:<br>Git, ReactJS, Vue.js, CI (Travis-CI / circleCI), ExpressJS, Alexa (node.js), Gradle, Angular, Maven Apache, CodeCov, Raspberry Pi, Mac, Linux, Windows, Apache Ant, Firebase, Microcontroller',
           '<figure><embed src="https://wakatime.com/share/@binhonglee/9272127a-c588-4102-b229-37322aa12233.svg" style="max-width: 700px"></embed></figure>'
         ]
       },
@@ -81,7 +83,7 @@ export default {
         name: 'Experiences',
         things: [
           {
-            primary: 'Siri Language Engineer (Contract)',
+            primary: 'Siri Language Engineer (AdvantisGlobal)',
             secondary: 'Apple Inc.',
             date: 'December 2017 - Present',
             details: [
@@ -91,7 +93,7 @@ export default {
           {
             primary: 'Founding Software Engineer',
             secondary: 'Humanity X Technologies LLC',
-            date: 'September 2014 - January 2017',
+            date: 'September 2014 - November 2017',
             details: [
               'Save up to 3 hours of setup time per machine per developer through Ansible provisioning script for vagrant.',
               'Develop and maintain a client side RESTful API plug that takes in real time data (up to 20,000 data points) and analyze it to be shown to clients.'
@@ -110,12 +112,47 @@ export default {
           }
         ]
       },
+      articles: {
+        name: 'Articles',
+        things: [
+          {
+            primary: '<a href="https://hackernoon.com/restful-api-with-spark-kotlin-f43bd57affc4">RESTful API with Spark Kotlin</a>',
+            secondary: '<a href="https://hackernoon.com">Hacker Noon</a>',
+            date: 'Mar 2018'
+          },
+          {
+            primary: '<a href="https://medium.com/yesphx-stories/hackathons-arizona-state-university-7d977c67509b">Hackathons @ Arizona State University</a>',
+            secondary: '<a href="https://medium.com/yesphx-stories">#yesphx stories</a>',
+            date: 'Jan 2017'
+          }
+        ]
+      },
       community: {
         name: 'Community',
         things: [
           {
-            primary: 'Workshop leader',
-            secondary: 'Hacks for Humanity 2017',
+            primary: 'Workshop leader - (Web Dev with ReactJS)',
+            secondary: 'SunHacks',
+            date: 'Apr 2018'
+          },
+          {
+            primary: 'Workshop leader - (RESTful API with ExpressJS)',
+            secondary: 'Hack the Fog',
+            date: 'Mar 2018'
+          },
+          {
+            primary: 'Mentor',
+            secondary: 'TreeHacks',
+            date: 'Feb 2018'
+          },
+          {
+            primary: 'Mentor',
+            secondary: 'HackDavis',
+            date: 'Jan 2018'
+          },
+          {
+            primary: 'Workshop leader - (Introduction to Git)',
+            secondary: 'Hacks for Humanity',
             date: 'Oct 2017'
           },
           {
@@ -137,11 +174,6 @@ export default {
             primary: 'Judge',
             secondary: 'CodeDay Phoenix',
             date: 'February 2017'
-          },
-          {
-            primary: 'Writer',
-            secondary: '#yesphx',
-            date: 'January 2017'
           },
           {
             primary: 'Robot Design Judge',
@@ -210,7 +242,7 @@ export default {
         things: [
           {
             url: 'https://breakups-webapp.herokuapp.com',
-            image: 'https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/23031498_10210808324385043_1385846761311806638_n.jpg?oh=9e2a8d4fb8b471438470c0aeab0b2683&oe=5A991A1C',
+            image: 'https://binhonglee.github.io/images/breakups.png',
             primary: 'Breakups (Webapp)',
             secondary: 'JavaScript [node.js, ReactJS, ExpressJS]<br>Android [Kotlin]'
           },
@@ -258,7 +290,7 @@ export default {
             image: 'https://binhonglee.github.io/images/asu.jpg'
           },
           {
-            url: 'http://news.sinchew.com.my/node/183120',
+            url: 'http://www.sinchew.com.my/node/1208817',
             image: 'https://binhonglee.github.io/images/sinchew.png'
           },
           {
