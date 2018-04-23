@@ -6,10 +6,8 @@
     <bulletedtextbox :items="experiences" id="experiences"/>
     <bulletedtextbox :items="education" id="education"/>
     <imagelabel :items="projects" id="projects"/>
-    <bulletedtextbox :items="community" :lineHeight="'close'" id="community"/>
-    <!--
     <bulletedtextbox :items="articles" :lineHeight="'close'" id="articles"/>
-    -->
+    <bulletedtextbox :items="community" :lineHeight="'close'" id="community"/>
     <bulletedtextbox :items="awards" :lineHeight="'close'" id="awards"/>
     <imagelabel :items="media" id="media"/>
     <contacts id="bottom"/>
@@ -39,7 +37,7 @@ export default {
         name: 'About me',
         things: [
           'Programming languages:<br/><b>Java, C++, JavaScript</b>, Kotlin, Android (Java/Kotlin), Shell (Bash), C, Python, Powershell, Matlab',
-          'Other skills / tools include:<br>Git, ReactJS, Vue.js, CI (Travis-CI / circleCI), ExpressJS, Alexa (node.js), Gradle, Angular, Maven Apache, CodeCov, Raspberry Pi, Mac, Linux, Windows, Apache Ant, Firebase, Microcontroller',
+          'Other skills / tools include:<br>Git, ReactJS, Vue.js, CI (Travis-CI / circleCI), ExpressJS, Alexa (node.js), Gradle, Maven Apache, CodeCov, Raspberry Pi, Mac, Linux, Windows, Apache Ant, Microcontroller',
           '<figure><embed src="https://wakatime.com/share/@binhonglee/9272127a-c588-4102-b229-37322aa12233.svg" style="max-width: 700px"></embed></figure>'
         ]
       },
@@ -116,6 +114,11 @@ export default {
         name: 'Articles',
         things: [
           {
+            primary: '<a href="https://codeburst.io/getting-started-with-travis-ci-f3223082f256">Getting started with Travis-CI</a>',
+            secondary: '<a href="https://codeburst.io/">codeburst.io</a>',
+            date: 'Apr 2018'
+          },
+          {
             primary: '<a href="https://hackernoon.com/restful-api-with-spark-kotlin-f43bd57affc4">RESTful API with Spark Kotlin</a>',
             secondary: '<a href="https://hackernoon.com">Hacker Noon</a>',
             date: 'Mar 2018'
@@ -131,12 +134,12 @@ export default {
         name: 'Community',
         things: [
           {
-            primary: 'Workshop leader - (Web Dev with ReactJS)',
+            primary: 'Speaker (Web Dev with ReactJS)',
             secondary: 'SunHacks',
             date: 'Apr 2018'
           },
           {
-            primary: 'Workshop leader - (RESTful API with ExpressJS)',
+            primary: 'Speaker (RESTful API with ExpressJS)',
             secondary: 'Hack the Fog',
             date: 'Mar 2018'
           },
@@ -151,7 +154,7 @@ export default {
             date: 'Jan 2018'
           },
           {
-            primary: 'Workshop leader - (Introduction to Git)',
+            primary: 'Speaker (Introduction to Git)',
             secondary: 'Hacks for Humanity',
             date: 'Oct 2017'
           },
@@ -242,7 +245,7 @@ export default {
         things: [
           {
             url: 'https://breakups-webapp.herokuapp.com',
-            image: 'https://binhonglee.github.io/images/breakups.png',
+            image: 'https://binhonglee.github.io/images/breakups.PNG',
             primary: 'Breakups (Webapp)',
             secondary: 'JavaScript [node.js, ReactJS, ExpressJS]<br>Android [Kotlin]'
           },

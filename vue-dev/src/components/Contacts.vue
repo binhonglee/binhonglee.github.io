@@ -2,8 +2,6 @@
   <div class="contacts">
     <h2 style="color: #ffffff;" class="section-heading">Contact me</h2>
     <p>
-      <a href="mailto:binhong%40binhong.me"><i class="fa fa-envelope-o"/></a>
-      <a href="mailto:binhong%40binhong.me" class="emails">binhong@binhong.me</a>
       <a href="mailto:binhong.lee%40asu.edu"><i class="fa fa-envelope-o"/></a>
       <a href="mailto:binhong.lee%40asu.edu" class="emails">binhong.lee@asu.edu</a>
     </p>
