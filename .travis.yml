@@ -1,0 +1,14 @@
+language: node_js
+os:
+  - linux
+  - osx
+
+node_js:
+  - "node"
+  - "stable"
+
+install:
+  - cd vue-dev && npm install
+
+script:
+  - cd vue-dev && npm test
