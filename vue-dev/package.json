@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Personal Website",
   "author": "BinHong Lee <binhong@binhong.me>",
-  "homepage": "https://binhonglee.github.io/",
+  "homepage": "https://binhong.me/",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
