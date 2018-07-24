@@ -2,6 +2,7 @@
   <div class="contacts">
     <h2 style="color: #ffffff;" class="section-heading">Contact me</h2>
     <p>
+      <i class="far fa-envelope"></i><br/>
       <a href="mailto:binhong.lee%40asu.edu" class="emails">binhong.lee@asu.edu</a>
     </p>
   </div>
@@ -14,6 +15,7 @@ export default {
 </script>
 
 <style scoped>
+@import url('../../font-awesome/css/all.css');
 .contacts {
   width: 100%;
   padding-top: 25px;
@@ -27,7 +29,7 @@ a {
 }
 
 i {
-  font-size: 25px;
+  font-size: 40px;
 }
 
 .emails {

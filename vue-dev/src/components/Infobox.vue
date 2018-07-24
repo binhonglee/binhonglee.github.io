@@ -37,8 +37,7 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://use.fontawesome.com/releases/v5.1.1/js/all.js');
-@import url('https://use.fontawesome.com/releases/v5.1.1/js/v4-shims.js');
+@import url('../../font-awesome/css/all.css');
 .infobox {
     margin-top: 0px;
     padding-top: 20px;
