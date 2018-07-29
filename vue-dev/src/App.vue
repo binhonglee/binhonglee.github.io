@@ -244,38 +244,38 @@ export default {
         name: 'Projects',
         things: [
           {
-            url: 'https://breakups-webapp.herokuapp.com',
-            image: 'https://binhonglee.github.io/images/breakups.PNG',
+            url: 'https://breakups.life',
+            image: 'https://binhong.me/images/breakups.PNG',
             primary: 'Breakups (Webapp)',
             secondary: 'JavaScript [node.js, ReactJS, ExpressJS]<br>Android [Kotlin]'
           },
           {
             url: 'https://github.com/binhonglee/Dota2-Random',
-            image: 'https://binhonglee.github.io/images/dota2Random.png',
+            image: 'https://binhong.me/images/dota2Random.png',
             primary: 'Dota2 Random (Alexa)',
             secondary: 'Javascript [node.js, alexa-sdk]<br>Travis-CI, CodeCov'
           },
           {
-            url: 'https://binhonglee.github.io/LibrarySystem',
-            image: 'https://binhonglee.github.io/images/LibrarySystem.png',
+            url: 'https://binhong.me/LibrarySystem',
+            image: 'https://binhong.me/images/LibrarySystem.png',
             primary: 'Library System (Java)',
             secondary: 'Java [swing, JUnit], Maven Apache<br>Travis-CI, CodeCov'
           },
           {
-            url: 'https://binhonglee.github.io/BikeSafetyWithPi',
-            image: 'https://binhonglee.github.io/images/sunriseac.png',
+            url: 'https://binhong.me/BikeSafetyWithPi',
+            image: 'https://binhong.me/images/sunriseac.png',
             primary: 'Sunrise Alarm Clock',
             secondary: 'C, ATMEGA168P'
           },
           {
-            url: 'https://binhonglee.github.io/TicketingSystem',
-            image: 'https://binhonglee.github.io/images/TicketingSystem.png',
+            url: 'https://binhong.me/TicketingSystem',
+            image: 'https://binhong.me/images/TicketingSystem.png',
             primary: 'Ticketing System (CLI)',
             secondary: 'C++, Apache Ant, Travis-CI'
           },
           {
             url: 'https://binhong.me/7thLoop',
-            image: 'https://binhonglee.github.io/images/7thloop.png',
+            image: 'https://binhong.me/images/7thloop.png',
             primary: '7thLoop (Webapp)',
             secondary: 'JavaScript [Quintus]'
           }
@@ -286,27 +286,27 @@ export default {
         things: [
           {
             url: 'https://www.youtube.com/watch?v=lrek6FrYVrg',
-            image: 'https://binhonglee.github.io/images/fox10.jpg'
+            image: 'https://binhong.me/images/fox10.jpg'
           },
           {
             url: 'https://asunow.asu.edu/content/changemaker-challenge-winners-reach-out-those-expressing-thoughts-suicide-social-media',
-            image: 'https://binhonglee.github.io/images/asu.jpg'
+            image: 'https://binhong.me/images/asu.jpg'
           },
           {
             url: 'http://www.sinchew.com.my/node/1208817',
-            image: 'https://binhonglee.github.io/images/sinchew.png'
+            image: 'https://binhong.me/images/sinchew.png'
           },
           {
             url: 'http://www.statepress.com/article/2015/09/ark-humanity-app-save-lives',
-            image: 'https://binhonglee.github.io/images/statepress.jpg'
+            image: 'https://binhong.me/images/statepress.jpg'
           },
           {
             url: 'https://www.facebook.com/notes/457398051261/',
-            image: 'https://binhonglee.github.io/images/kwongwah.jpg'
+            image: 'https://binhong.me/images/kwongwah.jpg'
           },
           {
-            url: 'https://binhonglee.github.io/images/skor_news.jpg',
-            image: 'https://binhonglee.github.io/images/berita_harian.jpg'
+            url: 'https://binhong.me/images/skor_news.jpg',
+            image: 'https://binhong.me/images/berita_harian.jpg'
           }
         ]
       }

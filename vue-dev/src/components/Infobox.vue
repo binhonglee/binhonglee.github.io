@@ -1,24 +1,25 @@
 <template>
     <div class="infobox">
-        <a href="https://binhong.me">
-            <img class="img-circle" src="https://binhonglee.github.io/images/profile.jpg" style="border-radius: 50%; width: 200px; margin-bottom: 0px; color: #04B45F;"/>
-            <h1>{{ name }}</h1>
-        </a>
+        <img class="img-circle" src="https://binhong.me/images/profile.jpg" style="border-radius: 50%; width: 200px; margin-bottom: 0px; color: #04B45F;"/>
+        <h1>{{ name }}</h1>
         <div class="titles">
             Siri Language Engineer @ Apple Inc.<br>B.Sc. Software Engineering, Arizona State University
         </div>
         <div class="icons">
             <a href="https://www.facebook.com/binhonglee">
-                <i class="fa fa-facebook-official"></i>
+                <i class="fab fa-facebook-square"></i>
             </a>
             <a href="https://www.github.com/binhonglee">
-                <i class="fa fa-github"></i>
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://keybase.io/binhonglee">
+                <i class="fab fa-keybase"></i>
             </a>
             <a href="https://www.linkedin.com/in/binhonglee">
-                <i class="fa fa-linkedin"></i>
+                <i class="fab fa-linkedin"></i>
             </a>
             <a href="https://www.twitter.com/binhonglee">
-                <i class="fa fa-twitter"></i>
+                <i class="fab fa-twitter"></i>
             </a>
         </div>
     </div>
@@ -36,7 +37,7 @@ export default {
 </script>
 
 <style scoped>
-@import url('../../font-awesome/styles.css');
+@import url('../../font-awesome/css/all.css');
 .infobox {
     margin-top: 0px;
     padding-top: 20px;
@@ -68,11 +69,11 @@ h1:hover {
     margin-right: auto;
     margin-left: auto;
     text-align: center;
-    width: 200px;
+    width: 230px;
     word-spacing: 8px;
 }
 
-.fa {
+.fab {
     color: #ffffff;
     font-size: 38px;
 }

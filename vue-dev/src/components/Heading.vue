@@ -5,7 +5,7 @@
         <li class="items"><a href="#top">Top</a></li>
         <li class="items"><a href="#bottom">Bottom</a></li>
         <li class="items">|</li>
-        <li class="items"><a href="https://blog.binhong.me/">Blog</a></li>
+        <li class="items"><a href="https://binhong.me/blog">Blog</a></li>
         <li class="items"><a href="https://drive.google.com/file/d/0BxDXwYis6WZSWmtvN0Z5a3Q2eTA/view?usp=sharing">PDF</a></li>
       </ul>
     </nav>
