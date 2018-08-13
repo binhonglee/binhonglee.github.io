@@ -11,4 +11,4 @@ install:
   - cd vue-dev && npm install
 
 script:
-  - cd vue-dev && npm test
+  - npm test
