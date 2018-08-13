@@ -3,8 +3,8 @@
         <h2>{{items.name}}</h2>
         <div class="left-lining">
             <div v-bind:class="items.name" v-for="item in items.things" v-bind:key="item.primary">
-                <a v-if="item.primary === ''" v-html="item.secondary"/>
-                <a v-else><b v-html="item.primary"/> - <a v-html="item.secondary"/></a>
+                <p v-if="item.primary === ''" v-html="item.secondary"/>
+                <p v-else><b v-html="item.primary"/> - <p v-html="item.secondary"/></p>
                 <i class="date">({{item.date}})</i>
                 <ul>
                     <li v-for="detail in item.details" v-bind:key="detail" v-html="detail"/>
@@ -48,6 +48,11 @@ export default {
 .closeItems {
     text-align: left;
     padding: 1px 0 1px 0
+}
+
+p {
+    margin: 0px;
+    display:inline
 }
 
 a {

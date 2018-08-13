@@ -34,7 +34,7 @@ export default {
   data () {
     return {
       about: {
-        name: 'About me',
+        name: 'About',
         things: [
           'Programming languages:<br/><b>Java, C++, JavaScript</b>, Kotlin, Android (Java/Kotlin), Shell (Bash), C, Python, Powershell, Matlab',
           'Other skills / tools include:<br>Git, ReactJS, Vue.js, CI (Travis-CI / circleCI), ExpressJS, Alexa (node.js), Gradle, Maven Apache, CodeCov, Raspberry Pi, Mac, Linux, Windows, Apache Ant, Microcontroller',
@@ -111,7 +111,7 @@ export default {
         ]
       },
       articles: {
-        name: 'Articles',
+        name: 'Guest Writing',
         things: [
           {
             primary: '<a href="https://codeburst.io/getting-started-with-travis-ci-f3223082f256">Getting started with Travis-CI</a>',
@@ -250,25 +250,25 @@ export default {
             secondary: 'JavaScript [node.js, ReactJS, ExpressJS]<br>Android [Kotlin]'
           },
           {
-            url: 'https://github.com/binhonglee/Dota2-Random',
+            url: 'https://git.binhong.me/binhong/Dota2-Random',
             image: 'https://binhong.me/images/dota2Random.png',
             primary: 'Dota2 Random (Alexa)',
             secondary: 'Javascript [node.js, alexa-sdk]<br>Travis-CI, CodeCov'
           },
           {
-            url: 'https://binhong.me/LibrarySystem',
+            url: 'https://git.binhong.me/binhong/LibrarySystem',
             image: 'https://binhong.me/images/LibrarySystem.png',
             primary: 'Library System (Java)',
             secondary: 'Java [swing, JUnit], Maven Apache<br>Travis-CI, CodeCov'
           },
           {
-            url: 'https://binhong.me/BikeSafetyWithPi',
+            url: 'https://git.binhong.me/binhong/BikeSafetyWithPi',
             image: 'https://binhong.me/images/sunriseac.png',
             primary: 'Sunrise Alarm Clock',
             secondary: 'C, ATMEGA168P'
           },
           {
-            url: 'https://binhong.me/TicketingSystem',
+            url: 'https://git.binhong.me/binhong/TicketingSystem',
             image: 'https://binhong.me/images/TicketingSystem.png',
             primary: 'Ticketing System (CLI)',
             secondary: 'C++, Apache Ant, Travis-CI'
@@ -330,14 +330,14 @@ export default {
     border-left-style: solid;
     border-left-color: rgb(4, 180, 95);
     margin: 10px 0 10px;
-    padding: 10px 0 10px 20px;
+    padding: 10px 20px 10px 20px;
 }
 
 .defaultboxes {
     font-family: 'Oxygen';
     margin-left: auto;
     margin-right: auto;
-    max-width: 1000px;
+    max-width: 1011px;
     padding-top: 25px;
     padding-bottom: 5px;
 }
@@ -346,10 +346,19 @@ export default {
     float: right;
 }
 
+a {
+    color: #026435;
+}
+
+a:hover,
+a:focus {
+    color: #0B486B;
+}
+
 h2 {
     font-family: 'Fira Sans';
     font-weight: bold;
-    font-size: 24px;
+    font-size: 30px;
     letter-spacing: -0.5px;
     margin: 0px;
 }

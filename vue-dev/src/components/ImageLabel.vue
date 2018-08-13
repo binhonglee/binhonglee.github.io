@@ -28,22 +28,12 @@ img {
     max-height: 160px;
 }
 
-a {
-    color: #026435;
-}
-
-a:hover,
-a:focus {
-    color: #0B486B;
-}
-
 p {
     margin: 0px;
 }
 
 .images {
     width: 300px;
-    height: 180px;
     text-align: center;
     display:inline-block;
     margin: 15px 11px 15px 11px;

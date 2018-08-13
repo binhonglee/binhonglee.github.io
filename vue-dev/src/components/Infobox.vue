@@ -1,6 +1,6 @@
 <template>
     <div class="infobox">
-        <img class="img-circle" src="https://binhong.me/images/profile.jpg" style="border-radius: 50%; width: 200px; margin-bottom: 0px; color: #04B45F;"/>
+        <img class="img-circle" src="https://binhong.me/images/profile.png" style="border-radius: 50%; width: 200px; margin-bottom: 0px; color: #04B45F;"/>
         <h1>{{ name }}</h1>
         <div class="titles">
             Siri Language Engineer @ Apple Inc.<br>B.Sc. Software Engineering, Arizona State University
