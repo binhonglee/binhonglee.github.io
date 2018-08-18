@@ -37,7 +37,7 @@ export default {
   color: #ffffff;
   display: inline-block;
   vertical-align: top;
-  margin-right: 1rem;
+  margin-right: 16px;
 }
 .items:last-of-type {
   margin-right: 20px;

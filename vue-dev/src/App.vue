@@ -262,7 +262,7 @@ export default {
             secondary: 'Java [swing, JUnit], Maven Apache<br>Travis-CI, CodeCov'
           },
           {
-            url: 'https://git.binhong.me/binhong/BikeSafetyWithPi',
+            url: 'https://git.binhong.me/binhong/SunriseAlarmClock',
             image: 'https://binhong.me/images/sunriseac.png',
             primary: 'Sunrise Alarm Clock',
             secondary: 'C, ATMEGA168P'
