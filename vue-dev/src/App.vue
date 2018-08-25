@@ -47,7 +47,7 @@ export default {
           {
             primary: 'Bachelor of Science in Software Engineering',
             secondary: 'Arizona State University',
-            date: 'August 2014 - May 2017',
+            date: 'Aug 2014 - May 2017',
             details: [
               '<b>Mentor</b>, Devils Invent Healthcare 2017',
               '<b>Co-organizer</b>, HacksforHumanity 2016',
@@ -68,7 +68,7 @@ export default {
           {
             primary: 'American Degree Transfer Program',
             secondary: 'INTI International College Penang',
-            date: 'April 2012 - January 2014',
+            date: 'Apr 2012 - Jan 2014',
             details: [
               '<b>Founding President</b>, Robotics Club',
               '<b>Online Marketing Director & Technical Support</b>, Junior World Entrepreneurship Forum - Exabyte Startup Boss',
@@ -83,7 +83,7 @@ export default {
           {
             primary: 'Siri Language Engineer (AdvantisGlobal)',
             secondary: 'Apple Inc.',
-            date: 'December 2017 - Present',
+            date: 'Dec 2017 - Present',
             details: [
               'Improve the user experience for Siri users Malay language (mostly Malaysians, Indonesians and Singaporeans) across all platform '
             ]
@@ -91,7 +91,7 @@ export default {
           {
             primary: 'Founding Software Engineer',
             secondary: 'Humanity X Technologies LLC',
-            date: 'September 2014 - November 2017',
+            date: 'Sept 2014 - Nov 2017',
             details: [
               'Save up to 3 hours of setup time per machine per developer through Ansible provisioning script for vagrant.',
               'Develop and maintain a client side RESTful API plug that takes in real time data (up to 20,000 data points) and analyze it to be shown to clients.'
@@ -100,7 +100,7 @@ export default {
           {
             primary: 'LEGO Robotic Tutor',
             secondary: 'Bukit Gambir Elementary School, Penang, Malaysia',
-            date: 'March 2014 - April 2014',
+            date: 'Mar 2014 - Apr 2014',
             details: [
               'Intensive training for new students with no previous experience',
               'Provided competition insights through personal experience',
@@ -113,6 +113,11 @@ export default {
       articles: {
         name: 'Guest Writing',
         things: [
+          {
+            primary: '<a href="https://codeburst.io/hosting-your-own-git-server-with-gitea-fc3298aa15ce">Hosting your own Git server with Gitea</a>',
+            secondary: '<a href="https://codeburst.io/">codeburst.io</a>',
+            date: 'Aug 2018'
+          },
           {
             primary: '<a href="https://codeburst.io/getting-started-with-travis-ci-f3223082f256">Getting started with Travis-CI</a>',
             secondary: '<a href="https://codeburst.io/">codeburst.io</a>',
@@ -161,7 +166,7 @@ export default {
           {
             primary: 'Mentor',
             secondary: 'Devils Invent: Cybersecurity',
-            date: 'September 2017'
+            date: 'Sept 2017'
           },
           {
             primary: 'Judge',
@@ -171,27 +176,27 @@ export default {
           {
             primary: 'Mentor',
             secondary: 'SouthWest Hacks',
-            date: 'March 2017'
+            date: 'Mar 2017'
           },
           {
             primary: 'Judge',
             secondary: 'CodeDay Phoenix',
-            date: 'February 2017'
+            date: 'Feb 2017'
           },
           {
             primary: 'Robot Design Judge',
             secondary: 'FIRST LEGO League - Arizona State Championship',
-            date: 'January 2017'
+            date: 'Jan 2017'
           },
           {
             primary: 'Mentor',
             secondary: 'Fulton Furnace Fallout',
-            date: 'Fall 2016'
+            date: 'Sept 2016'
           },
           {
             primary: 'Shaper',
             secondary: 'Global Shapers Community, George Town Hub',
-            date: 'March 2014 - August 2014'
+            date: 'Mar 2014 - Aug 2014'
           }
         ]
       },
