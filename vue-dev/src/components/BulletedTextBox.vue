@@ -2,7 +2,7 @@
     <div class="bulletedtextbox defaultboxes">
         <h2>{{items.name}}</h2>
         <div class="left-lining">
-            <div v-bind:class="items.name" v-for="item in items.things" v-bind:key="item.primary">
+            <div v-bind:class="lineHeight" v-for="item in items.things" v-bind:key="item.primary">
                 <div class="itemTitle" v-if="item.primary === ''" v-html="item.secondary" />
                 <div class="itemTitle" v-else><b v-html="item.primary"/> - <p v-html="item.secondary"/></div>
                 <i class="date">({{item.date}})</i>
@@ -27,31 +27,24 @@ export default {
       }
   },
   mounted: function () {
-    var toChange = document.getElementsByClassName(this.items.name)
-    while (toChange.length > 0) {
-        if (this.lineHeight == 'close') {
-            toChange[0].className = 'closeItems';
-        } else {
-            toChange[0].className = 'wideItems';
-        }
-    }
+
   }
 }
 </script>
 
 <style scoped>
-.wideItems {
+.wide {
     text-align: left;
     padding: 10px 0 10px 0;
 }
 
-.closeItems {
+.close {
     text-align: left;
     padding: 1px 0 1px 0
 }
 
 .itemTitle {
-    display: inline; 
+    display: inline;
 }
 
 p {
