@@ -23,9 +23,12 @@ module.exports = function (config) {
       noInfo: true
     },
     coverageReporter: {
-      dir: './coverage',
       reporters: [
         { type: 'lcov', subdir: '.' },
+        // generates ./coverage/lcov.info
+        { type:'lcovonly', subdir: '.' },
+        // generates ./coverage/coverage-final.json
+        { type:'json', subdir: '.' },
         { type: 'text-summary' }
       ]
     }
