@@ -14,7 +14,7 @@ install:
 script:
   - npm test
   - codecov -t $CODECOV_TOKEN
-  - npm build
+  - npm run build
 
 deploy:
   provider: pages
