@@ -17,10 +17,14 @@ script:
   - npm run build
 
 deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-  target-branch: master
-  local-dir: dist
-  on:
-    branch: dev
+  - provider: pages
+    skip-cleanup: true
+    github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+    target-branch: master
+    local-dir: dist
+    on:
+      branch: dev
+  - provider: script
+    script: bash scripts/deployToGitLab.sh
+    on:
+      branch: AutoPush-GitLab
