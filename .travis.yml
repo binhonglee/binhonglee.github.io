@@ -15,6 +15,7 @@ script:
   - npm test
   - codecov -t $CODECOV_TOKEN
   - npm run build
+  - cp -r images dist
 
 deploy:
   provider: pages
