@@ -36,8 +36,8 @@ export default {
       about: {
         name: 'About',
         things: [
-          'Programming languages:<br/><b>Java, C++, JavaScript</b>, Kotlin, Android (Java/Kotlin), Shell (Bash), C, Python, Powershell, Matlab',
-          'Other skills / tools include:<br>Git, ReactJS, Vue.js, CI (Travis-CI / circleCI), ExpressJS, Alexa (node.js), Gradle, Maven Apache, CodeCov, Raspberry Pi, Mac, Linux, Windows, Apache Ant, Microcontroller',
+          'Programming languages:<br/><b>Java, C++, JavaScript</b>, Kotlin, Android (Java/Kotlin), Shell (Bash), C',
+          'Other skills / tools include:<br>Git, ReactJS, Vue.js, CI (Travis-CI / circleCI), ExpressJS, Alexa (node.js), Gradle, Maven Apache, CodeCov',
           '<figure><embed src="https://wakatime.com/share/@binhonglee/9272127a-c588-4102-b229-37322aa12233.svg" style="max-width: 700px"></embed></figure>'
         ]
       },
@@ -83,9 +83,9 @@ export default {
           {
             primary: 'Siri Language Engineer (AdvantisGlobal)',
             secondary: 'Apple Inc.',
-            date: 'Dec 2017 - Present',
+            date: 'Dec 2017 - Oct 2018',
             details: [
-              'Improve the user experience for Siri users Malay language (mostly Malaysians, Indonesians and Singaporeans) across all platform '
+              'Improve the user experience for Siri Malay language users (mostly Malaysians, Indonesians and Singaporeans) across all platform'
             ]
           },
           {
@@ -93,8 +93,8 @@ export default {
             secondary: 'Humanity X Technologies LLC',
             date: 'Sept 2014 - Nov 2017',
             details: [
-              'Save up to 3 hours of setup time per machine per developer through Ansible provisioning script for vagrant.',
-              'Develop and maintain a client side RESTful API plug that takes in real time data (up to 20,000 data points) and analyze it to be shown to clients.'
+              'Save up to 3 hours of setup time per machine per developer through Ansible provisioning script for vagrant',
+              'Develop and maintain a client side RESTful API plug that takes in real time data (up to 20,000 data points) and analyze it to be shown to clients'
             ]
           },
           {
@@ -111,8 +111,13 @@ export default {
         ]
       },
       articles: {
-        name: 'Guest Writing',
+        name: 'Articles',
         things: [
+          {
+            primary: '<a href="https://medium.freecodecamp.org/how-you-can-host-multiple-domain-names-and-projects-in-one-vps-7aed4f56e7a1">How to host multiple domain names and projects on one server</a>',
+            secondary: '<a href="https://medium.freecodecamp.org/">freeCodeCamp</a>',
+            date: 'Aug 2018'
+          },
           {
             primary: '<a href="https://codeburst.io/hosting-your-own-git-server-with-gitea-fc3298aa15ce">Hosting your own Git server with Gitea</a>',
             secondary: '<a href="https://codeburst.io/">codeburst.io</a>',
@@ -197,16 +202,6 @@ export default {
             primary: 'Robot Design Judge',
             secondary: 'FIRST LEGO League - Arizona State Championship',
             date: 'Jan 2017'
-          },
-          {
-            primary: 'Mentor',
-            secondary: 'Fulton Furnace Fallout',
-            date: 'Sept 2016'
-          },
-          {
-            primary: 'Shaper',
-            secondary: 'Global Shapers Community, George Town Hub',
-            date: 'Mar 2014 - Aug 2014'
           }
         ]
       },

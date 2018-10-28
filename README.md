@@ -1,6 +1,6 @@
 # Personal website
 
-[![TravisCI Status](https://travis-ci.org/binhonglee/binhonglee.github.io.svg?branch=master)](https://travis-ci.org/binhonglee/binhonglee.github.io)
+[![TravisCI Status](https://travis-ci.org/binhonglee/binhonglee.github.io.svg?branch=dev)](https://travis-ci.org/binhonglee/binhonglee.github.io)
 [![codecov](https://codecov.io/gh/binhonglee/binhonglee.github.io/branch/master/graph/badge.svg)](https://codecov.io/gh/binhonglee/binhonglee.github.io)
 [![gitlab pipeline](https://gitlab.com/binhonglee/binhonglee.gitlab.io/badges/master/pipeline.svg)](https://gitlab.com/binhonglee/binhonglee.gitlab.io/commits/master)
 [![gitlab coverage report](https://gitlab.com/binhonglee/binhonglee.gitlab.io/badges/master/coverage.svg)](https://gitlab.com/binhonglee/binhonglee.gitlab.io/commits/master)
