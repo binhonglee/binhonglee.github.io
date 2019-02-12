@@ -37,8 +37,7 @@ export default {
         name: 'About',
         things: [
           'Programming languages:<br/><b>Java, C++, JavaScript</b>, Kotlin, Android (Java/Kotlin), Shell (Bash), C',
-          'Other skills / tools include:<br>Git, ReactJS, Vue.js, CI (Travis-CI / circleCI), ExpressJS, Alexa (node.js), Gradle, Maven Apache, CodeCov',
-          '<figure><embed src="https://wakatime.com/share/@binhonglee/9272127a-c588-4102-b229-37322aa12233.svg" style="max-width: 700px"></embed></figure>'
+          'Other skills / tools include:<br>Git, ReactJS, Vue.js, CI (Travis-CI / circleCI), ExpressJS, Alexa (node.js), Gradle, Maven Apache, CodeCov'
         ]
       },
       education: {
@@ -81,6 +80,11 @@ export default {
         name: 'Experiences',
         things: [
           {
+            primary: 'Software Engineer',
+            secondary: 'Facebook Inc.',
+            date: 'Oct 2018 - Present'
+          },
+          {
             primary: 'Siri Language Engineer (AdvantisGlobal)',
             secondary: 'Apple Inc.',
             date: 'Dec 2017 - Oct 2018',
@@ -96,23 +100,17 @@ export default {
               'Save up to 3 hours of setup time per machine per developer through Ansible provisioning script for vagrant',
               'Develop and maintain a client side RESTful API plug that takes in real time data (up to 20,000 data points) and analyze it to be shown to clients'
             ]
-          },
-          {
-            primary: 'LEGO Robotic Tutor',
-            secondary: 'Bukit Gambir Elementary School, Penang, Malaysia',
-            date: 'Mar 2014 - Apr 2014',
-            details: [
-              'Intensive training for new students with no previous experience',
-              'Provided competition insights through personal experience',
-              'Giving feedbacks and suggestions on their problem solving solution',
-              'Learned to better communicate and explain matters in a simpler language'
-            ]
           }
         ]
       },
       articles: {
         name: 'Articles',
         things: [
+          {
+            primary: '<a href="https://hackernoon.com/test-driven-development-with-alexa-sdk-777f6b5e5486">Test Driven Development with Alexa SDK</a>',
+            secondary: '<a href="https://hackernoon.com">Hacker Noon</a>',
+            date: 'Oct 2018'
+          },
           {
             primary: '<a href="https://medium.freecodecamp.org/how-you-can-host-multiple-domain-names-and-projects-in-one-vps-7aed4f56e7a1">How to host multiple domain names and projects on one server</a>',
             secondary: '<a href="https://medium.freecodecamp.org/">freeCodeCamp</a>',

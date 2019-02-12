@@ -1,9 +1,9 @@
 # Personal website
 
 [![TravisCI Status](https://travis-ci.org/binhonglee/binhonglee.github.io.svg?branch=dev)](https://travis-ci.org/binhonglee/binhonglee.github.io)
-[![codecov](https://codecov.io/gh/binhonglee/binhonglee.github.io/branch/master/graph/badge.svg)](https://codecov.io/gh/binhonglee/binhonglee.github.io)
-[![gitlab pipeline](https://gitlab.com/binhonglee/binhonglee.gitlab.io/badges/master/pipeline.svg)](https://gitlab.com/binhonglee/binhonglee.gitlab.io/commits/master)
-[![gitlab coverage report](https://gitlab.com/binhonglee/binhonglee.gitlab.io/badges/master/coverage.svg)](https://gitlab.com/binhonglee/binhonglee.gitlab.io/commits/master)
+[![CodeCov](https://codecov.io/gh/binhonglee/binhonglee.github.io/branch/dev/graph/badge.svg)](https://codecov.io/gh/binhonglee/binhonglee.github.io)
+[![GitLab pipeline](https://gitlab.com/binhonglee/binhonglee.gitlab.io/badges/dev/pipeline.svg)](https://gitlab.com/binhonglee/binhonglee.gitlab.io/commits/dev)
+[![GitLab coverage](https://gitlab.com/binhonglee/binhonglee.gitlab.io/badges/dev/coverage.svg)](https://gitlab.com/binhonglee/binhonglee.gitlab.io/commits/dev)
 [![Dependency Status](https://dependencyci.com/github/binhonglee/binhonglee.github.io/badge)](https://tidelift.com/subscriber/github/binhonglee/repositories/binhonglee.github.io)
 
 > Just a little personal experiment with Vue.js.
