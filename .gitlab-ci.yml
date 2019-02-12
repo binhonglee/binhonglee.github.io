@@ -1,13 +1,32 @@
 # This file is a template, and might need editing before it works on your project.
 # Full project: https://gitlab.com/pages/plain-html
+image: node:latest
 
-pages:
-  stage: deploy
-  script:
-  - npm install
-  - npm run build
-  artifacts:
-    paths:
-    - dist
-  only:
-  - master
+cache:
+  paths:
+  - node_modules/
+
+stages:
+  - build
+  - test
+  - deploy
+
+setup:
+  stage: build
+  script: npm install
+
+test:
+  stage: test
+  script: npm test
+  coverage: '/^Statements\s*:\s*([^%]+)/'
+
+# pages:
+#   stage: deploy
+#   script:
+#   - npm install
+#   - npm run build
+#   artifacts:
+#     paths:
+#     - dist
+#   only:
+#   - dev
