@@ -142,6 +142,11 @@ export default {
         name: 'Community',
         things: [
           {
+            primary: 'Mentor',
+            secondary: 'TreeHacks',
+            date: 'Feb 2019'
+          },
+          {
             primary: '<a href="https://oct2018.desertcodecamp.com/session/1713">Speaker (Git-Good - Using Git effectively even on personal projects)</a>',
             secondary: 'Desert Code Camp',
             date: 'Oct 2018'
