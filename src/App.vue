@@ -36,8 +36,8 @@ export default {
       about: {
         name: 'About',
         things: [
-          'Programming languages:<br/><b>Java, C++, JavaScript</b>, Kotlin, Android (Java/Kotlin), Shell (Bash), C',
-          'Other skills / tools include:<br>Git, ReactJS, Vue.js, CI (Travis-CI / circleCI), ExpressJS, Alexa (node.js), Gradle, Maven Apache, CodeCov'
+          'Programming languages:<br/><b>Java, C++, JavaScript</b>, Hack, TypeScript, Shell, Go, Nim',
+          'Other skills / tools include:<br/>Git, ReactJS, Vue.js, Build tools (Please, Buck), CI (Travis-CI / circleCI), Alexa (node.js)'
         ]
       },
       education: {
@@ -82,7 +82,10 @@ export default {
           {
             primary: 'Software Engineer',
             secondary: 'Facebook Inc.',
-            date: 'Oct 2018 - Present'
+            date: 'Oct 2018 - Present',
+            details: [
+                'Launched new SERP experience for Workplace which improved visibility of more relavant results in addition to moving the stack away from unmaintained code base.'
+            ]
           },
           {
             primary: 'Siri Language Engineer (AdvantisGlobal)',
@@ -106,6 +109,11 @@ export default {
       articles: {
         name: 'Articles',
         things: [
+          {
+            primary: '<a href="https://www.freecodecamp.org/news/functional-and-flexible-shell-scripting-tricks-a2d693be2dd4/">Functional and flexible shell scripting tricks</a>',
+            secondary: '<a href="https://www.freecodecamp.org/news/">freeCodeCamp</a>',
+            date: 'May 2019'
+          },
           {
             primary: '<a href="https://hackernoon.com/test-driven-development-with-alexa-sdk-777f6b5e5486">Test Driven Development with Alexa SDK</a>',
             secondary: '<a href="https://hackernoon.com">Hacker Noon</a>',
@@ -257,10 +265,16 @@ export default {
         name: 'Projects',
         things: [
           {
+            url: 'https://binhonglee.github.io/wings',
+            image: 'https://binhong.me/images/wings.png',
+            primary: 'wings',
+            secondary: 'Nim, TypeScript<br>Nimble, Please'
+          },
+          {
             url: 'https://breakups.life',
             image: 'https://binhong.me/images/breakups.PNG',
             primary: 'Breakups (Webapp)',
-            secondary: 'JavaScript [node.js, ReactJS, ExpressJS]<br>Android [Kotlin]'
+            secondary: 'JavaScript [node.js, ReactJS, ExpressJS]'
           },
           {
             url: 'https://git.binhong.me/binhong/Dota2-Random',
@@ -273,12 +287,6 @@ export default {
             image: 'https://binhong.me/images/LibrarySystem.png',
             primary: 'Library System (Java)',
             secondary: 'Java [swing, JUnit], Maven Apache<br>Travis-CI, CodeCov'
-          },
-          {
-            url: 'https://git.binhong.me/binhong/SunriseAlarmClock',
-            image: 'https://binhong.me/images/sunriseac.png',
-            primary: 'Sunrise Alarm Clock',
-            secondary: 'C, ATMEGA168P'
           },
           {
             url: 'https://git.binhong.me/binhong/TicketingSystem',
