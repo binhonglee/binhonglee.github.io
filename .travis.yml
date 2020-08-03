@@ -8,20 +8,26 @@ node_js:
   - "stable"
 
 install:
-  - npm install
-  - npm install -g codecov
+  - pnpm install
+  - pnpm install -g codecov
 
 script:
-  - npm test
+  - pnpm run test:unit
   - codecov -t $CODECOV_TOKEN
-  - npm run build
+  - pnpm run build
   - cp -r images dist
 
 deploy:
+  edge: true
+  cleanup: false
+  strategy: git
   provider: pages
-  skip-cleanup: true
   github-token: $GITHUB_TOKEN
-  target-branch: master
+  target-branch: dist
   local-dir: dist
+  keep_history: true
   on:
     branch: dev
+    condition:
+      - "$(uname -s) = Darwin"
+      - "$BRANCH = stable"

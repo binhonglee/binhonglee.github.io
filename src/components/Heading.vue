@@ -6,7 +6,12 @@
         <li class="items"><a href="#bottom">Bottom</a></li>
         <li class="items">|</li>
         <li class="items"><a href="https://binhong.me/blog">Blog</a></li>
-        <li class="items"><a href="https://drive.google.com/file/d/0BxDXwYis6WZSWmtvN0Z5a3Q2eTA/view?usp=sharing">PDF</a></li>
+        <li class="items">
+          <a
+            href="https://drive.google.com/file/d/0BxDXwYis6WZSWmtvN0Z5a3Q2eTA/view?usp=sharing"
+            >PDF</a
+          >
+        </li>
       </ul>
     </nav>
   </div>
@@ -14,13 +19,13 @@
 
 <script>
 export default {
-  name: 'heading'
-}
+  name: "heading"
+};
 </script>
 
 <style scoped>
 .heading {
-  font-family: 'Fira Sans';
+  font-family: "Fira Sans";
   height: 35px;
   background-color: #036564;
   float: left;
