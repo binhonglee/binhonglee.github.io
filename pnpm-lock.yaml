@@ -5,17 +5,17 @@ devDependencies:
   '@vue/cli-plugin-eslint': 4.4.6_6c821a40f0a2d8835e16e5ebfd7b1ebf
   '@vue/cli-plugin-unit-mocha': 4.4.6_@vue+cli-service@4.4.6
   '@vue/cli-service': 4.4.6_2a3b0af47a92f01bc0c6cf801723e878
-  '@vue/eslint-config-prettier': 6.0.0_ff1a0794ccedf7f99c22ff8ba9beac97
+  '@vue/eslint-config-prettier': 6.0.0_e8aaee43be4e5690453ac1514b6c3a4a
   '@vue/test-utils': 1.0.3_d81dac297579cfd5597855dabf60f13b
   chai: 4.2.0
   css-loader: 4.2.1
   eslint: 7.6.0
-  eslint-plugin-prettier: 3.1.4_eslint@7.6.0+prettier@1.19.1
+  eslint-plugin-prettier: 3.1.4_eslint@7.6.0+prettier@2.0.5
   eslint-plugin-vue: 6.2.2_eslint@7.6.0
   istanbul-instrumenter-loader: 3.0.1
   node-sass: 4.14.1
   nyc: 15.1.0
-  prettier: 1.19.1
+  prettier: 2.0.5
   sass-loader: 9.0.3_node-sass@4.14.1
   vue-loader: 13.7.3_e1e35c632ab8d7df7e7125d9c0a555cb
   vue-style-loader: 3.1.2
@@ -534,12 +534,12 @@ packages:
       prettier: 1.19.1
     resolution:
       integrity: sha512-lejBLa7xAMsfiZfNp7Kv51zOzifnb29FwdnMLa96z26kXErPFioSf9BMcePVIQ6/Gc6/mC0UrPpxAWIHyae0vw==
-  /@vue/eslint-config-prettier/6.0.0_ff1a0794ccedf7f99c22ff8ba9beac97:
+  /@vue/eslint-config-prettier/6.0.0_e8aaee43be4e5690453ac1514b6c3a4a:
     dependencies:
       eslint: 7.6.0
       eslint-config-prettier: 6.11.0_eslint@7.6.0
-      eslint-plugin-prettier: 3.1.4_eslint@7.6.0+prettier@1.19.1
-      prettier: 1.19.1
+      eslint-plugin-prettier: 3.1.4_eslint@7.6.0+prettier@2.0.5
+      prettier: 2.0.5
     dev: true
     peerDependencies:
       eslint: '>= 5.0.0'
@@ -3144,10 +3144,10 @@ packages:
       eslint: '>= 3.2.1'
     resolution:
       integrity: sha512-MxMYoReSO5+IZMGgpBZHHSx64zYPSPTpXDwsgW7ChlJTF/sA+obqRbHplxD6sBStE+g4Mi0LCLkG4t9liu//mQ==
-  /eslint-plugin-prettier/3.1.4_eslint@7.6.0+prettier@1.19.1:
+  /eslint-plugin-prettier/3.1.4_eslint@7.6.0+prettier@2.0.5:
     dependencies:
       eslint: 7.6.0
-      prettier: 1.19.1
+      prettier: 2.0.5
       prettier-linter-helpers: 1.0.0
     dev: true
     engines:
@@ -7492,6 +7492,13 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-s7PoyDv/II1ObgQunCbB9PdLmUcBZcnWOcxDh7O0N/UwDEsHyqkW+Qh28jW+mVuCdx7gLB0BotYI1Y6uI9iyew==
+  /prettier/2.0.5:
+    dev: true
+    engines:
+      node: '>=10.13.0'
+    hasBin: true
+    resolution:
+      integrity: sha512-7PtVymN48hGcO4fGjybyBSIWDsLU4H4XlvOHfq91pz9kkGlonzwTfYkaIEwiRg/dAJF9YlbsduBAgtYLi+8cFg==
   /pretty-error/2.1.1:
     dependencies:
       renderkid: 2.0.3
@@ -10089,7 +10096,7 @@ specifiers:
   istanbul-instrumenter-loader: 3.0.1
   node-sass: 4.14.1
   nyc: 15.1.0
-  prettier: 1.19.1
+  prettier: 2.0.5
   sass-loader: 9.0.3
   vue: 2.6.11
   vue-loader: 13.7.3
