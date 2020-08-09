@@ -17,8 +17,8 @@ devDependencies:
   nyc: 15.1.0
   prettier: 1.19.1
   sass-loader: 9.0.3_node-sass@4.14.1
-  vue-loader: 13.3.0_e1e35c632ab8d7df7e7125d9c0a555cb
-  vue-style-loader: 3.0.1
+  vue-loader: 13.7.3_e1e35c632ab8d7df7e7125d9c0a555cb
+  vue-style-loader: 3.1.2
   vue-template-compiler: 2.6.11
 lockfileVersion: 5.1
 packages:
@@ -9464,7 +9464,7 @@ packages:
     dev: true
     resolution:
       integrity: sha512-BXq3jwIagosjgNVae6tkHzzIk6a8MHFtzAdwhnV5VlvPTFxDCvIttgSiHWjdGoTJvXtmRu5HacExfdarRcFhog==
-  /vue-loader/13.3.0_e1e35c632ab8d7df7e7125d9c0a555cb:
+  /vue-loader/13.7.3_e1e35c632ab8d7df7e7125d9c0a555cb:
     dependencies:
       consolidate: 0.14.5
       css-loader: 4.2.1
@@ -9478,7 +9478,7 @@ packages:
       resolve: 1.17.0
       source-map: 0.6.1
       vue-hot-reload-api: 2.3.4
-      vue-style-loader: 3.0.1
+      vue-style-loader: 3.1.2
       vue-template-compiler: 2.6.11
       vue-template-es2015-compiler: 1.9.1
     dev: true
@@ -9486,7 +9486,7 @@ packages:
       css-loader: '*'
       vue-template-compiler: ^2.0.0
     resolution:
-      integrity: sha512-ACslFXI52qxaWSYoyU3mNq8rcTPCP0nNlQSwWuIZCrBJbWLRtYrCdqW2IfGLZf0NuQLq3s49J1xFrApORamJtA==
+      integrity: sha512-ACCwbfeC6HjY2pnDii+Zer+MZ6sdOtwvLmDXRK/BoD3WNR551V22R6KEagwHoTRJ0ZlIhpCBkptpCU6+Ri/05w==
   /vue-loader/15.9.3_5301d49b91a5273e67d0261daf815cc2:
     dependencies:
       '@vue/component-compiler-utils': 3.2.0
@@ -9511,13 +9511,13 @@ packages:
         optional: true
     resolution:
       integrity: sha512-Y67VnGGgVLH5Voostx8JBZgPQTlDQeOVBLOEsjc2cXbCYBKexSKEpOA56x0YZofoDOTszrLnIShyOX1p9uCEHA==
-  /vue-style-loader/3.0.1:
+  /vue-style-loader/3.1.2:
     dependencies:
       hash-sum: 1.0.2
       loader-utils: 1.4.0
     dev: true
     resolution:
-      integrity: sha1-yLY5uy8kuvnXgnTcF+TyZMHe2gg=
+      integrity: sha512-ICtVdK/p+qXWpdSs2alWtsXt9YnDoYjQe0w5616j9+/EhjoxZkbun34uWgsMFnC1MhrMMwaWiImz3K2jK1Yp2Q==
   /vue-style-loader/4.1.2:
     dependencies:
       hash-sum: 1.0.2
@@ -10033,6 +10033,6 @@ specifiers:
   prettier: 1.19.1
   sass-loader: 9.0.3
   vue: 2.6.11
-  vue-loader: 13.3.0
-  vue-style-loader: 3.0.1
+  vue-loader: 13.7.3
+  vue-style-loader: 3.1.2
   vue-template-compiler: 2.6.11
