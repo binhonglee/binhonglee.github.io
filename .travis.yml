@@ -13,8 +13,10 @@ install:
   - pnpm install -g codecov
 
 script:
-  - pnpm run test:unit
+  - pnpm run cover
   - codecov -t $CODECOV_TOKEN
+
+before_deploy:
   - pnpm run build
   - cp -r images dist
 
