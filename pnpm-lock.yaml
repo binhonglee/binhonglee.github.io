@@ -8,7 +8,7 @@ devDependencies:
   '@vue/eslint-config-prettier': 6.0.0_1345b5cbc03a9fbd9684eb9c486fabf2
   '@vue/test-utils': 1.0.4_ae554d8947d7e926b014dda25865f517
   chai: 4.2.0
-  css-loader: 4.2.1
+  css-loader: 4.2.2
   eslint: 7.7.0
   eslint-plugin-prettier: 3.1.4_eslint@7.7.0+prettier@2.1.0
   eslint-plugin-vue: 6.2.2_eslint@7.7.0
@@ -17,7 +17,7 @@ devDependencies:
   nyc: 15.1.0
   prettier: 2.1.0
   sass-loader: 9.0.3_node-sass@4.14.1
-  vue-loader: 15.9.3_136c7d4e2b4c7c470fa66c8b7edb53ad
+  vue-loader: 15.9.3_da06a844a781de5a07847a9fec79644b
   vue-style-loader: 4.1.2
   vue-template-compiler: 2.6.12
 lockfileVersion: 5.1
@@ -2471,13 +2471,12 @@ packages:
       webpack: ^4.0.0 || ^5.0.0
     resolution:
       integrity: sha512-M5lSukoWi1If8dhQAUCvj4H8vUt3vOnwbQBH9DdTm/s4Ym2B/3dPMtYZeJmq7Q3S3Pa+I94DcZ7pc9bP14cWIQ==
-  /css-loader/4.2.1:
+  /css-loader/4.2.2:
     dependencies:
       camelcase: 6.0.0
       cssesc: 3.0.0
       icss-utils: 4.1.1
       loader-utils: 2.0.0
-      normalize-path: 3.0.0
       postcss: 7.0.32
       postcss-modules-extract-imports: 2.0.0
       postcss-modules-local-by-default: 3.0.3
@@ -2492,7 +2491,7 @@ packages:
     peerDependencies:
       webpack: ^4.27.0 || ^5.0.0
     resolution:
-      integrity: sha512-MoqmF1if7Z0pZIEXA4ZF9PgtCXxWbfzfJM+3p+OYfhcrwcqhaCRb74DSnfzRl7e024xEiCRn5hCvfUbTf2sgFA==
+      integrity: sha512-omVGsTkZPVwVRpckeUnLshPp12KsmMSLqYxs12+RzM9jRR5Y+Idn/tBffjXRvOE+qW7if24cuceFJqYR5FmGBg==
   /css-select-base-adapter/0.1.1:
     dev: true
     resolution:
@@ -9611,15 +9610,17 @@ packages:
     dev: true
     resolution:
       integrity: sha512-BXq3jwIagosjgNVae6tkHzzIk6a8MHFtzAdwhnV5VlvPTFxDCvIttgSiHWjdGoTJvXtmRu5HacExfdarRcFhog==
-  /vue-loader/15.9.3_136c7d4e2b4c7c470fa66c8b7edb53ad:
+  /vue-loader/15.9.3_b61fd53126d8a76b25cc5244d186282f:
     dependencies:
       '@vue/component-compiler-utils': 3.2.0
-      css-loader: 4.2.1
+      cache-loader: 4.1.0_webpack@4.44.1
+      css-loader: 3.6.0_webpack@4.44.1
       hash-sum: 1.0.2
       loader-utils: 1.4.0
       vue-hot-reload-api: 2.3.4
       vue-style-loader: 4.1.2
       vue-template-compiler: 2.6.12
+      webpack: 4.44.1_webpack@4.44.1
     dev: true
     peerDependencies:
       cache-loader: '*'
@@ -9633,17 +9634,15 @@ packages:
         optional: true
     resolution:
       integrity: sha512-Y67VnGGgVLH5Voostx8JBZgPQTlDQeOVBLOEsjc2cXbCYBKexSKEpOA56x0YZofoDOTszrLnIShyOX1p9uCEHA==
-  /vue-loader/15.9.3_b61fd53126d8a76b25cc5244d186282f:
+  /vue-loader/15.9.3_da06a844a781de5a07847a9fec79644b:
     dependencies:
       '@vue/component-compiler-utils': 3.2.0
-      cache-loader: 4.1.0_webpack@4.44.1
-      css-loader: 3.6.0_webpack@4.44.1
+      css-loader: 4.2.2
       hash-sum: 1.0.2
       loader-utils: 1.4.0
       vue-hot-reload-api: 2.3.4
       vue-style-loader: 4.1.2
       vue-template-compiler: 2.6.12
-      webpack: 4.44.1_webpack@4.44.1
     dev: true
     peerDependencies:
       cache-loader: '*'
@@ -10174,7 +10173,7 @@ specifiers:
   '@vue/eslint-config-prettier': 6.0.0
   '@vue/test-utils': 1.0.4
   chai: 4.2.0
-  css-loader: 4.2.1
+  css-loader: 4.2.2
   eslint: 7.7.0
   eslint-plugin-prettier: 3.1.4
   eslint-plugin-vue: 6.2.2
