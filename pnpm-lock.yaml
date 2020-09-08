@@ -8,7 +8,7 @@ devDependencies:
   '@vue/eslint-config-prettier': 6.0.0_83e4acdb49b166eaa7fa1e1f867e09ab
   '@vue/test-utils': 1.0.5_ae554d8947d7e926b014dda25865f517
   chai: 4.2.0
-  css-loader: 4.2.2
+  css-loader: 4.3.0
   eslint: 7.8.1
   eslint-plugin-prettier: 3.1.4_eslint@7.8.1+prettier@2.1.1
   eslint-plugin-vue: 6.2.2_eslint@7.8.1
@@ -17,7 +17,7 @@ devDependencies:
   nyc: 15.1.0
   prettier: 2.1.1
   sass-loader: 10.0.2_node-sass@4.14.1
-  vue-loader: 15.9.3_da06a844a781de5a07847a9fec79644b
+  vue-loader: 15.9.3_c0e63d43faed660537f7848cacdc6f7d
   vue-style-loader: 4.1.2
   vue-template-compiler: 2.6.12
 lockfileVersion: 5.1
@@ -2505,7 +2505,7 @@ packages:
       webpack: ^4.0.0 || ^5.0.0
     resolution:
       integrity: sha512-M5lSukoWi1If8dhQAUCvj4H8vUt3vOnwbQBH9DdTm/s4Ym2B/3dPMtYZeJmq7Q3S3Pa+I94DcZ7pc9bP14cWIQ==
-  /css-loader/4.2.2:
+  /css-loader/4.3.0:
     dependencies:
       camelcase: 6.0.0
       cssesc: 3.0.0
@@ -2517,7 +2517,7 @@ packages:
       postcss-modules-scope: 2.2.0
       postcss-modules-values: 3.0.0
       postcss-value-parser: 4.1.0
-      schema-utils: 2.7.0
+      schema-utils: 2.7.1
       semver: 7.3.2
     dev: true
     engines:
@@ -2525,7 +2525,7 @@ packages:
     peerDependencies:
       webpack: ^4.27.0 || ^5.0.0
     resolution:
-      integrity: sha512-omVGsTkZPVwVRpckeUnLshPp12KsmMSLqYxs12+RzM9jRR5Y+Idn/tBffjXRvOE+qW7if24cuceFJqYR5FmGBg==
+      integrity: sha512-rdezjCjScIrsL8BSYszgT4s476IcNKt6yX69t0pHjJVnPUTDpn4WfIpDQTN3wCJvUvfsz/mFjuGOekf3PY3NUg==
   /css-select-base-adapter/0.1.1:
     dev: true
     resolution:
@@ -9679,10 +9679,10 @@ packages:
         optional: true
     resolution:
       integrity: sha512-Y67VnGGgVLH5Voostx8JBZgPQTlDQeOVBLOEsjc2cXbCYBKexSKEpOA56x0YZofoDOTszrLnIShyOX1p9uCEHA==
-  /vue-loader/15.9.3_da06a844a781de5a07847a9fec79644b:
+  /vue-loader/15.9.3_c0e63d43faed660537f7848cacdc6f7d:
     dependencies:
       '@vue/component-compiler-utils': 3.2.0
-      css-loader: 4.2.2
+      css-loader: 4.3.0
       hash-sum: 1.0.2
       loader-utils: 1.4.0
       vue-hot-reload-api: 2.3.4
@@ -10218,7 +10218,7 @@ specifiers:
   '@vue/eslint-config-prettier': 6.0.0
   '@vue/test-utils': 1.0.5
   chai: 4.2.0
-  css-loader: 4.2.2
+  css-loader: 4.3.0
   eslint: 7.8.1
   eslint-plugin-prettier: 3.1.4
   eslint-plugin-vue: 6.2.2
