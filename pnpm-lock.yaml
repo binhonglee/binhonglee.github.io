@@ -17,7 +17,7 @@ devDependencies:
   nyc: 15.1.0
   prettier: 2.1.2
   sass-loader: 10.0.4_node-sass@4.14.1
-  vue-loader: 15.9.3_f33839d72082491638fe83cdbed699e1
+  vue-loader: 15.9.4_f33839d72082491638fe83cdbed699e1
   vue-style-loader: 4.1.2
   vue-template-compiler: 2.6.12
 lockfileVersion: 5.2
@@ -678,7 +678,7 @@ packages:
       lru-cache: 4.1.5
       merge-source-map: 1.1.0
       postcss: 7.0.32
-      postcss-selector-parser: 6.0.2
+      postcss-selector-parser: 6.0.4
       source-map: 0.6.1
       vue-template-es2015-compiler: 1.9.1
     dev: true
@@ -9745,7 +9745,7 @@ packages:
         optional: true
     resolution:
       integrity: sha512-Y67VnGGgVLH5Voostx8JBZgPQTlDQeOVBLOEsjc2cXbCYBKexSKEpOA56x0YZofoDOTszrLnIShyOX1p9uCEHA==
-  /vue-loader/15.9.3_f33839d72082491638fe83cdbed699e1:
+  /vue-loader/15.9.4_f33839d72082491638fe83cdbed699e1:
     dependencies:
       '@vue/component-compiler-utils': 3.2.0
       css-loader: 5.0.0
@@ -9766,7 +9766,7 @@ packages:
       vue-template-compiler:
         optional: true
     resolution:
-      integrity: sha512-Y67VnGGgVLH5Voostx8JBZgPQTlDQeOVBLOEsjc2cXbCYBKexSKEpOA56x0YZofoDOTszrLnIShyOX1p9uCEHA==
+      integrity: sha512-58YX00oCYre2/+Hu7wwV/2Bpml15/PUHni8LcmpRF1ofiOZJJ+oYt1g3J8BRyE2ZrkMWiy95fZynnZRmMdErEQ==
   /vue-loader/16.0.0-beta.7:
     dependencies:
       '@types/mini-css-extract-plugin': 0.9.1
@@ -10293,6 +10293,6 @@ specifiers:
   prettier: 2.1.2
   sass-loader: 10.0.4
   vue: 2.6.12
-  vue-loader: 15.9.3
+  vue-loader: 15.9.4
   vue-style-loader: 4.1.2
   vue-template-compiler: 2.6.12
