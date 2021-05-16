@@ -1,6 +1,6 @@
 <template>
   <div class="contacts">
-    <h2 style="color: #ffffff;" class="section-heading">Contact me</h2>
+    <h2 style="color: #ffffff" class="section-heading">Contact me</h2>
     <p>
       <a href="https://pgp.mit.edu/pks/lookup?op=get&search=0x6B4C5608EC620D19">
         <i class="fas fa-key"></i>
@@ -14,12 +14,12 @@
 
 <script>
 export default {
-  name: "contacts"
+  name: "contacts",
 };
 </script>
 
 <style scoped>
-@import url("../../font-awesome/css/all.css");
+@import url("../../node_modules/@fortawesome/fontawesome-free/css/all.css");
 .contacts {
   width: 100%;
   padding-top: 25px;
@@ -27,15 +27,11 @@ export default {
   background-color: #000000;
 }
 
-i,
-a {
-  color: #ffffff;
-  margin-right: 5px;
-  margin-left: 5px;
-}
-
 i {
+  color: #ffffff;
   font-size: 40px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .emails {

@@ -1,5 +1,5 @@
 module.exports = {
-  chainWebpack: config => {
+  chainWebpack: (config) => {
     if (process.env.NODE_ENV === "test") {
       config.module
         .rule("js")
@@ -7,8 +7,8 @@ module.exports = {
         .use("istanbul-instrumenter-loader")
         .loader("istanbul-instrumenter-loader")
         .options({
-          esModules: true
+          esModules: true,
         });
     }
-  }
+  },
 };

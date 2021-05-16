@@ -21,9 +21,9 @@ export default {
   name: "imagelabel",
   props: {
     items: {
-      type: Object
-    }
-  }
+      type: Object,
+    },
+  },
 };
 </script>
 

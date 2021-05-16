@@ -5,7 +5,7 @@ import ImageLabel from "@/components/ImageLabel";
 function createComponent(items) {
   const Constructor = Vue.extend(ImageLabel);
   const vm = new Constructor({
-    propsData: items
+    propsData: items,
   }).$mount();
   return vm;
 }
@@ -18,7 +18,7 @@ describe("ImageLabel", () => {
   it(`empty box`, () => {
     expect(
       getRenderedText({
-        items: {}
+        items: {},
       })
     ).to.equal("");
   });
@@ -33,10 +33,10 @@ describe("ImageLabel", () => {
               url: "https://breakups.life",
               image: "https://binhong.me/images/breakups.PNG",
               primary: "Primary string",
-              secondary: "Secondary string"
-            }
-          ]
-        }
+              secondary: "Secondary string",
+            },
+          ],
+        },
       })
     ).to.equal("titlePrimary stringSecondary string");
   });
@@ -49,10 +49,10 @@ describe("ImageLabel", () => {
           things: [
             {
               url: "https://breakups.life",
-              image: "https://binhong.me/images/breakups.PNG"
-            }
-          ]
-        }
+              image: "https://binhong.me/images/breakups.PNG",
+            },
+          ],
+        },
       })
     ).to.equal("title");
   });
@@ -67,22 +67,22 @@ describe("ImageLabel", () => {
               url: "https://breakups.life",
               image: "https://binhong.me/images/breakups.PNG",
               primary: "Primary string1",
-              secondary: "Secondary string1"
+              secondary: "Secondary string1",
             },
             {
               url: "https://breakups.life",
               image: "https://binhong.me/images/breakups.PNG",
               primary: "Primary string2",
-              secondary: "Secondary string2"
+              secondary: "Secondary string2",
             },
             {
               url: "https://breakups.life",
               image: "https://binhong.me/images/breakups.PNG",
               primary: "Primary string3",
-              secondary: "Secondary string3"
-            }
-          ]
-        }
+              secondary: "Secondary string3",
+            },
+          ],
+        },
       })
     ).to.equal(
       "titlePrimary string1Secondary string1Primary string2Secondary string2Primary string3Secondary string3"
@@ -97,18 +97,18 @@ describe("ImageLabel", () => {
           things: [
             {
               url: "https://breakups.life",
-              image: "https://binhong.me/images/breakups.PNG"
+              image: "https://binhong.me/images/breakups.PNG",
             },
             {
               url: "https://breakups.life",
-              image: "https://binhong.me/images/breakups.PNG"
+              image: "https://binhong.me/images/breakups.PNG",
             },
             {
               url: "https://breakups.life",
-              image: "https://binhong.me/images/breakups.PNG"
-            }
-          ]
-        }
+              image: "https://binhong.me/images/breakups.PNG",
+            },
+          ],
+        },
       })
     ).to.equal("title");
   });

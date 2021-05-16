@@ -17,9 +17,9 @@ export default {
   name: "genericboxes",
   props: {
     items: {
-      type: Object
-    }
-  }
+      type: Object,
+    },
+  },
 };
 </script>
 

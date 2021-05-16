@@ -5,7 +5,7 @@ import GenericBoxes from "@/components/GenericBoxes";
 function createComponent(items) {
   const Constructor = Vue.extend(GenericBoxes);
   const vm = new Constructor({
-    propsData: items
+    propsData: items,
   }).$mount();
   return vm;
 }
@@ -18,7 +18,7 @@ describe("GenericBoxes", () => {
   it("empty box", () => {
     expect(
       getRenderedText({
-        items: {}
+        items: {},
       })
     ).to.equal("");
   });
@@ -27,8 +27,8 @@ describe("GenericBoxes", () => {
     expect(
       getRenderedText({
         items: {
-          things: ["Thing 1", "Thing 2"]
-        }
+          things: ["Thing 1", "Thing 2"],
+        },
       })
     ).to.equal("Thing 1Thing 2");
   });
@@ -37,8 +37,8 @@ describe("GenericBoxes", () => {
     expect(
       getRenderedText({
         items: {
-          name: "title"
-        }
+          name: "title",
+        },
       })
     ).to.equal("title");
   });
@@ -48,8 +48,8 @@ describe("GenericBoxes", () => {
       getRenderedText({
         items: {
           name: "title",
-          things: ["Thing 1", "Thing 2"]
-        }
+          things: ["Thing 1", "Thing 2"],
+        },
       })
     ).to.equal("titleThing 1Thing 2");
   });

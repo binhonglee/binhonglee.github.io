@@ -1,0 +1,45 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Cache pnpm-store
+        id: cache-pnpm-store
+        uses: actions/cache@v1
+        with:
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-pnpm-store
+      - name: Cache node_modules
+        id: cache-node-modules
+        uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: ${{ hashFiles('**/package.json') }}-pnpm
+
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14'
+
+      - name: Install pnpm
+        run: sudo npm i -g pnpm
+      - run: pnpm i
+
+      - name: Run Test
+        run: pnpm run cover
+
+      - name: Build
+        run: pnpm run build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: main
+        if: ${{ github.ref == 'refs/heads/dev' }}

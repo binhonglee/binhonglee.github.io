@@ -8,7 +8,7 @@ describe("Infobox", () => {
 
   it("Just Infobox", () => {
     expect(vm.$el.textContent).to.equal(
-      "BinHong Lee Full Stack | Machine Learning | Software Engineer "
+      "BinHong LeeJust some guy wandering on the internet."
     );
   });
 });

@@ -3,12 +3,15 @@
     <img
       class="img-circle"
       src="https://binhong.me/images/profile.png"
-      style="border-radius: 50%; width: 200px; margin-bottom: 0px; color: #04B45F;"
+      style="
+        border-radius: 50%;
+        width: 200px;
+        margin-bottom: 0px;
+        color: #04b45f;
+      "
     />
     <h1>{{ name }}</h1>
-    <div class="titles">
-      Full Stack | Machine Learning | Software Engineer
-    </div>
+    <div class="titles">Just some guy wandering on the internet.</div>
     <div class="icons">
       <a href="https://www.facebook.com/binhonglee">
         <i class="fab fa-facebook-square"></i>
@@ -16,8 +19,16 @@
       <a href="https://www.github.com/binhonglee">
         <i class="fab fa-github"></i>
       </a>
+      <a href="https://binhong.me/blog">
+        <i class="fas fa-blog"></i>
+      </a>
       <a href="https://keybase.io/binhonglee">
         <i class="fab fa-keybase"></i>
+      </a>
+      <a
+        href="https://drive.google.com/file/d/0BxDXwYis6WZSWmtvN0Z5a3Q2eTA/view?usp=sharing"
+      >
+        <i class="far fa-file-pdf"></i>
       </a>
       <a href="https://www.linkedin.com/in/binhonglee">
         <i class="fab fa-linkedin"></i>
@@ -34,14 +45,14 @@ export default {
   name: "infobox",
   data() {
     return {
-      name: "BinHong Lee"
+      name: "BinHong Lee",
     };
-  }
+  },
 };
 </script>
 
 <style scoped>
-@import url("../../font-awesome/css/all.css");
+@import url("../../node_modules/@fortawesome/fontawesome-free/css/all.css");
 .infobox {
   margin-top: 0px;
   padding-top: 20px;
@@ -69,13 +80,20 @@ h1 {
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-  width: 230px;
+  width: 320px;
   word-spacing: 8px;
 }
 
-.fab {
+.fab,
+.far {
   color: #ffffff;
   font-size: 38px;
+  margin: 5px;
+}
+
+.fas {
+  color: #ffffff;
+  font-size: 35px;
   margin: 5px;
 }
 </style>
