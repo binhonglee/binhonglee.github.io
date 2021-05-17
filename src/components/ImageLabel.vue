@@ -29,7 +29,7 @@ export default {
 
 <style scoped>
 img {
-  max-width: 300px;
+  max-width: 280px;
   max-height: 160px;
 }
 
@@ -38,7 +38,7 @@ p {
 }
 
 .images {
-  width: 300px;
+  width: 280px;
   text-align: center;
   display: inline-block;
   margin: 15px 11px 15px 11px;

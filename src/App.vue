@@ -270,38 +270,38 @@ export default {
         things: [
           {
             url: "https://wings.sh",
-            image: "https://binhong.me/images/wings.png",
+            image: "images/wings.png",
             primary: "wings",
             secondary: "Nim, TypeScript<br>Nimble, Please",
           },
           {
             url: "https://breakups.life",
-            image: "https://binhong.me/images/breakups.PNG",
+            image: "images/breakups.PNG",
             primary: "Breakups (Webapp)",
             secondary: "JavaScript [node.js, ReactJS, ExpressJS]",
           },
           {
             url: "https://git.binhong.me/binhong/Dota2-Random",
-            image: "https://binhong.me/images/dota2Random.png",
+            image: "images/dota2Random.png",
             primary: "Dota2 Random (Alexa)",
             secondary: "Javascript [node.js, alexa-sdk]<br>Travis-CI, CodeCov",
           },
           {
             url: "https://git.binhong.me/binhong/LibrarySystem",
-            image: "https://binhong.me/images/LibrarySystem.png",
+            image: "images/LibrarySystem.png",
             primary: "Library System (Java)",
             secondary:
               "Java [swing, JUnit], Maven Apache<br>Travis-CI, CodeCov",
           },
           {
             url: "https://git.binhong.me/binhong/TicketingSystem",
-            image: "https://binhong.me/images/TicketingSystem.png",
+            image: "images/TicketingSystem.png",
             primary: "Ticketing System (CLI)",
             secondary: "C++, Apache Ant, Travis-CI",
           },
           {
             url: "https://binhong.me/7thLoop",
-            image: "https://binhong.me/images/7thloop.png",
+            image: "images/7thloop.png",
             primary: "7thLoop (Webapp)",
             secondary: "JavaScript [Quintus]",
           },
@@ -312,29 +312,29 @@ export default {
         things: [
           {
             url: "https://www.youtube.com/watch?v=lrek6FrYVrg",
-            image: "https://binhong.me/images/fox10.jpg",
+            image: "images/fox10.jpg",
           },
           {
             url:
               "https://asunow.asu.edu/content/changemaker-challenge-winners-reach-out-those-expressing-thoughts-suicide-social-media",
-            image: "https://binhong.me/images/asu.jpg",
+            image: "images/asu.jpg",
           },
           {
             url: "http://www.sinchew.com.my/node/1208817",
-            image: "https://binhong.me/images/sinchew.png",
+            image: "images/sinchew.png",
           },
           {
             url:
               "http://www.statepress.com/article/2015/09/ark-humanity-app-save-lives",
-            image: "https://binhong.me/images/statepress.jpg",
+            image: "images/statepress.jpg",
           },
           {
             url: "https://www.facebook.com/notes/457398051261/",
-            image: "https://binhong.me/images/kwongwah.jpg",
+            image: "images/kwongwah.jpg",
           },
           {
             url: "https://binhong.me/images/skor_news.jpg",
-            image: "https://binhong.me/images/berita_harian.jpg",
+            image: "images/berita_harian.jpg",
           },
         ],
       },

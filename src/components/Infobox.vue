@@ -2,7 +2,7 @@
   <div class="infobox">
     <img
       class="img-circle"
-      src="https://binhong.me/images/profile.png"
+      src="images/profile.png"
       style="
         border-radius: 50%;
         width: 200px;
