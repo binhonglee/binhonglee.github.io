@@ -8,7 +8,7 @@ specifiers:
   '@vue/cli-service': 4.5.9
   '@vue/eslint-config-prettier': 6.0.0
   '@vue/test-utils': 1.1.1
-  chai: 4.2.0
+  chai: 4.3.4
   css-loader: 5.0.1
   eslint: 7.14.0
   eslint-plugin-prettier: 3.1.4
@@ -34,7 +34,7 @@ devDependencies:
   '@vue/cli-service': 4.5.9_d8359634c72458adc56ed221ee545f2b
   '@vue/eslint-config-prettier': 6.0.0_e2cd239ef28be6cbee6ca397c6a2019d
   '@vue/test-utils': 1.1.1_ae554d8947d7e926b014dda25865f517
-  chai: 4.2.0
+  chai: 4.3.4
   css-loader: 5.0.1
   eslint: 7.14.0
   eslint-plugin-prettier: 3.1.4_eslint@7.14.0+prettier@2.2.0
@@ -1791,15 +1791,15 @@ packages:
     resolution: {integrity: sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=}
     dev: true
 
-  /chai/4.2.0:
-    resolution: {integrity: sha512-XQU3bhBukrOsQCuwZndwGcCVQHyZi53fQ6Ys1Fym7E4olpIqqZZhhoFJoaKVvV17lWQoXYwgWN2nF5crA8J2jw==}
+  /chai/4.3.4:
+    resolution: {integrity: sha512-yS5H68VYOCtN1cjfwumDSuzn/9c+yza4f3reKXlE5rUg7SFcCEy90gJvydNgOYtblyf4Zi6jIWRnXOgErta0KA==}
     engines: {node: '>=4'}
     dependencies:
       assertion-error: 1.1.0
       check-error: 1.0.2
       deep-eql: 3.0.1
       get-func-name: 2.0.0
-      pathval: 1.1.0
+      pathval: 1.1.1
       type-detect: 4.0.8
     dev: true
 
@@ -6660,8 +6660,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /pathval/1.1.0:
-    resolution: {integrity: sha1-uULm1L3mUwBe9rcTYd74cn0GReA=}
+  /pathval/1.1.1:
+    resolution: {integrity: sha512-Dp6zGqpTdETdR63lehJYPeIOqpiNBNtc7BpWSLrOje7UaIsE5aY92r/AunQA7rsXvet3lrJ3JnZX29UPTKXyKQ==}
     dev: true
 
   /pbkdf2/3.1.1:
