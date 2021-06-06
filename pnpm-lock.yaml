@@ -14,7 +14,7 @@ specifiers:
   eslint-plugin-prettier: 3.4.0
   eslint-plugin-vue: 7.10.0
   istanbul-instrumenter-loader: 3.0.1
-  node-sass: 5.0.0
+  node-sass: 6.0.0
   nyc: 15.1.0
   prettier: 2.2.0
   sass-loader: 12.0.0
@@ -40,10 +40,10 @@ devDependencies:
   eslint-plugin-prettier: 3.4.0_eslint@7.14.0+prettier@2.2.0
   eslint-plugin-vue: 7.10.0_eslint@7.14.0
   istanbul-instrumenter-loader: 3.0.1
-  node-sass: 5.0.0
+  node-sass: 6.0.0
   nyc: 15.1.0
   prettier: 2.2.0
-  sass-loader: 12.0.0_node-sass@5.0.0
+  sass-loader: 12.0.0_node-sass@6.0.0
   vue-loader: 15.9.5_c0d40dc66202f194a6d8647bbd8485ea
   vue-style-loader: 4.1.2
   vue-template-compiler: 2.6.12
@@ -661,7 +661,7 @@ packages:
       pnp-webpack-plugin: 1.6.4
       portfinder: 1.0.28
       postcss-loader: 3.0.0
-      sass-loader: 12.0.0_node-sass@5.0.0
+      sass-loader: 12.0.0_node-sass@6.0.0
       ssri: 7.1.0
       terser-webpack-plugin: 2.3.7_webpack@4.44.1
       thread-loader: 2.1.3_webpack@4.44.1
@@ -6062,9 +6062,9 @@ packages:
     resolution: {integrity: sha512-gsO4vjEdQaTusZAEebUWp2a5d7dF5DYoIpDG7WySnk7BuZDW+GPpHXoXXuYawRBr/9t5q54tirPz79kFIWg4dA==}
     dev: true
 
-  /node-sass/5.0.0:
-    resolution: {integrity: sha512-opNgmlu83ZCF792U281Ry7tak9IbVC+AKnXGovcQ8LG8wFaJv6cLnRlc6DIHlmNxWEexB5bZxi9SZ9JyUuOYjw==}
-    engines: {node: '>=10'}
+  /node-sass/6.0.0:
+    resolution: {integrity: sha512-GDzDmNgWNc9GNzTcSLTi6DU6mzSPupVJoStIi7cF3GjwSE9q1cVakbvAAVSt59vzUjV9JJoSZFKoo9krbjKd2g==}
+    engines: {node: '>=12'}
     hasBin: true
     requiresBuild: true
     dependencies:
@@ -7779,7 +7779,7 @@ packages:
       yargs: 13.3.2
     dev: true
 
-  /sass-loader/12.0.0_node-sass@5.0.0:
+  /sass-loader/12.0.0_node-sass@6.0.0:
     resolution: {integrity: sha512-LJQMyDdNdhcvoO2gJFw7KpTaioVFDeRJOuatRDUNgCIqyu4s4kgDsNofdGzAZB1zFOgo/p3fy+aR/uGXamcJBg==}
     engines: {node: '>= 12.13.0'}
     peerDependencies:
@@ -7797,7 +7797,7 @@ packages:
     dependencies:
       klona: 2.0.4
       neo-async: 2.6.2
-      node-sass: 5.0.0
+      node-sass: 6.0.0
     dev: true
 
   /sax/1.2.4:
@@ -9028,6 +9028,7 @@ packages:
 
   /uuid/3.4.0:
     resolution: {integrity: sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==}
+    deprecated: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
     hasBin: true
     dev: true
 
