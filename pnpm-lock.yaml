@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@fortawesome/fontawesome-free': ^5.15.3
+  '@fortawesome/fontawesome-free': 5.15.3
   '@vue/cli-plugin-e2e-cypress': 4.5.9
   '@vue/cli-plugin-eslint': 4.5.9
   '@vue/cli-plugin-unit-mocha': 4.5.9
