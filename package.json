@@ -32,7 +32,7 @@
     "istanbul-instrumenter-loader": "3.0.1",
     "node-sass": "6.0.1",
     "nyc": "15.1.0",
-    "prettier": "2.3.1",
+    "prettier": "2.3.2",
     "sass-loader": "12.1.0",
     "vue-loader": "15.9.7",
     "vue-style-loader": "4.1.3",
