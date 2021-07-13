@@ -9,7 +9,7 @@ specifiers:
   '@vue/eslint-config-prettier': 6.0.0
   '@vue/test-utils': 1.2.1
   chai: 4.3.4
-  css-loader: 5.2.6
+  css-loader: 5.2.7
   eslint: 7.30.0
   eslint-plugin-prettier: 3.4.0
   eslint-plugin-vue: 7.13.0
@@ -35,7 +35,7 @@ devDependencies:
   '@vue/eslint-config-prettier': 6.0.0_82e4252401b0cc5be86f7c2133946f49
   '@vue/test-utils': 1.2.1_9065e7474e033a8e4b95615fc8e6c36c
   chai: 4.3.4
-  css-loader: 5.2.6
+  css-loader: 5.2.7
   eslint: 7.30.0
   eslint-plugin-prettier: 3.4.0_eslint@7.30.0+prettier@2.3.2
   eslint-plugin-vue: 7.13.0_eslint@7.30.0
@@ -2374,8 +2374,8 @@ packages:
       webpack: 4.44.1
     dev: true
 
-  /css-loader/5.2.6:
-    resolution: {integrity: sha512-0wyN5vXMQZu6BvjbrPdUJvkCzGEO24HC7IS7nW4llc6BBFC+zwR9CKtYGv63Puzsg10L/o12inMY5/2ByzfD6w==}
+  /css-loader/5.2.7:
+    resolution: {integrity: sha512-Q7mOvpBNBG7YrVGMxRxcBJZFL75o+cH2abNASdibkj/fffYD8qWbInZrD0S9ccI6vZclF3DsHE7njGlLtaHbhg==}
     engines: {node: '>= 10.13.0'}
     peerDependencies:
       webpack: ^4.27.0 || ^5.0.0
