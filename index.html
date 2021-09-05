@@ -6,72 +6,133 @@
     <title>BinHong Lee</title>
     <link rel="stylesheet" href="style.css">
   </head>
-  <body class="body">
-    <div class="primary_block">
-      <img class="profile_img" src="images/profile.png" />
-      <div class="secondary_block bio">
-        <h1>BinHong Lee</h1>
-        <p>
-          Currently at FB (Search, Dating, Login), ex-Apple (Siri).
-        </p>
-        <p>
-          Used to be more active on startups in my previous life. Co-founded
-          Humanity X with an awesome people. Also worked on OrderPoint and
-          JourneyNow with a bunch of cool folks for a minute.
-        </p>
+  <body>
+    <details class="dark_mode_toggle" role="button" open>
+      <summary></summary>
+    </details>
+    <div class="wrapper">
+      <div class="content">
+        <div class="primary_block" style="vertical-align: middle;">
+          <div class="image_block">
+            <img
+              class="profile_img"
+              src="images/profile.png"
+              alt="
+                Commissioned image icon of me coding with a pair of black headphones on while sitting on a pink
+                bean bag wearing a light blue hoodie. The laptop is purple with a bunch of mostly MLH demo
+                stickers on it.
+              "
+            />
+          </div>
+          <div class="secondary_block bio">
+            <h1>BinHong Lee</h1>
+            <p>
+              👋 I'm a 🇲🇾 Software Engineer currently based in the Bay Area. You might know me from working
+              at FB (Search -> Dating -> Login), or previously at Apple (Siri).
+            </p>
+            <p>
+              Used to be more active on startups in my previous life. Co-founded Humanity X with some awesome
+              people. Also worked on OrderPoint and JourneyNow with a bunch of cool folks for a minute.
+            </p>
+            
+          </div>
+          <div class="primary_block">
+            <p>
+              I sometimes mentor, speak, (and judge) at hackathons. Feel free to hit me up for anything from
+              resume review to mentorship. I don't currently do mock interviews but I'm happy to share my own
+              interview experiences and advices. I only provide referral for people whom I've either worked
+              with or know on a personal capacity.
+            </p>
+            <p>
+              If you find any of my side projects below interesting, I'm happy to work with you and onboarding
+              you onto the project!
+            </p>
+          </div>
+        </div>
+        <div class="links">
+          <a class="link" href="https://binhong.me/blog">Blog</a>
+          <a class="link" href="https://timeline.binhong.me">Polywork</a>
+          <a class="link" href="https://keybase.io/binhonglee">Keybase</a>
+          <a class="link" href="https://twitter.com/binhonglee">Twitter</a>
+          <a class="link" href="https://github.com/binhonglee">GitHub</a>
+          <a class="link" href="https://linkedin.com/in/binhonglee">LinkedIn</a>
+        </div>  
       </div>
-    </div>
-    <div class="links">
-      <a class="link" href="https://binhong.me/blog">Blog</a>
-      <a class="link" href="https://timeline.binhong.me">Polywork</a>
-      <a class="link" href="https://keybase.io/binhonglee">Keybase</a>
-      <a class="link" href="https://pgp.mit.edu/pks/lookup?op=get&search=0x6B4C5608EC620D19">PGP key</a>
-      <a class="link" href="mailto:binhong%40binhong.me">Email</a>
-    </div>
-    <div class="links">
-      <a class="link" href="https://twitter.com/binhonglee">Twitter</a>
-      <a class="link" href="https://github.com/binhonglee">GitHub</a>
-      <a class="link" href="https://linkedin.com/in/binhonglee">LinkedIn</a>
-      <a class="link" href="https://instagram.com/binhonglee">Instagram</a>
-      <a class="link" href="https://facebook.com/binhonglee">Facebook</a>
-    </div>
-    <div class="primary_block projects">
-      <h1>Side projects</h1>
-      <div class="active primary_block">
-        <h2>Actively working</h2>
-        <a href="https://globetrotte.com">
-          <h3>GlobeTrotte</h3>
-          <h4>[Go TypeScript VueJS]</h4>
-          <p>Simple travel itinerary crowdsourcing platform.</p>
-        </a>
-        <a href="https://wings.sh">
-          <h3>wings</h3>
-          <h4>[nim]</h4>
-          <p>Customizable cross language code generator (for struct, enum, interface, logger etc.).</p>
-        </a>
-      </div>
-      <div class="deprecated primary_block">
-        <h2>Old stuffs (probably still works but badly 🙃)</h2>
-        <a href="https://breakups.life">
-          <h3>Breakups</h3>
-          <h4>[node.js ReactJS]</h4>
-          <p>Webapp for bill splitting among multiple people.</p>
-        </a>
-        <a href="https://github.com/binhonglee/dota2-random">
-          <h3>Dota2-Random</h3>
-          <h4>[node.js]</h4>
-          <p>An Alexa skill that returns a random hero based on the given parameters.</p>
-        </a>
-        <a href="https://github.com/binhonglee/dota2-random">
-          <h3>LibrarySystem</h3>
-          <h4>[Java Kotlin]</h4>
-          <p>An app for managing a physical library.</p>
-        </a>
-        <a href="https://github.com/binhonglee/TextCalculation">
-          <h3>TextCalculation</h3>
-          <h4>[Java]</h4>
-          <p>Calculator that takes in words instead of numbers.</p>
-        </a>
+      <div class="content">
+        <details role="button" open>
+          <summary><h1>Side projects</h1></summary>
+          <div class="primary_block projects">
+            <div class="active">
+              <h2>Actively working</h2>
+              <a href="https://globetrotte.com">
+                <h3>GlobeTrotte</h3>
+                <h4>[Go TypeScript VueJS]</h4>
+                <p>Simple travel itinerary crowdsourcing platform.</p>
+              </a>
+              <a href="https://wings.sh">
+                <h3>wings</h3>
+                <h4>[nim]</h4>
+                <p>Customizable cross language code generator (for struct, enum, interface, logger etc.).</p>
+              </a>
+            </div>
+            <div class="deprecated">
+              <h2>Old stuffs (probably still works but badly 🙃)</h2>
+              <a href="https://breakups.life">
+                <h3>Breakups</h3>
+                <h4>[node.js ReactJS]</h4>
+                <p>Webapp for bill splitting among multiple people.</p>
+              </a>
+              <a href="https://github.com/binhonglee/dota2-random">
+                <h3>Dota2-Random</h3>
+                <h4>[node.js]</h4>
+                <p>An Alexa skill that returns a random hero based on the given parameters.</p>
+              </a>
+              <a href="https://github.com/binhonglee/dota2-random">
+                <h3>LibrarySystem</h3>
+                <h4>[Java Kotlin]</h4>
+                <p>An app for managing a physical library.</p>
+              </a>
+              <a href="https://github.com/binhonglee/TextCalculation">
+                <h3>TextCalculation</h3>
+                <h4>[Java]</h4>
+                <p>Calculator that takes in words instead of numbers.</p>
+              </a>
+            </div>
+          </div>
+        </details>
+        <details role="button">
+          <summary><h1>Contact</h1></summary>
+          <div class="primary_block">
+            <h2>Personal</h2>
+            <p>
+              Open for anything from casual chat to mentorship. Feel free to drop me a DM on any of these
+              platforms. I can't promise to be the most responsive but I'll do my best to respond asap. If
+              you don't hear back in like 3 days, definitely ping me again!
+            </p>
+            <p>
+              <a class="link" href="https://www.facebook.com/messages/t/1258869258">Facebook</a>
+              <a class="link" href="https://twitter.com/binhonglee">Twitter</a>
+              <a class="link" href="https://instagram.com/binhonglee">Instagram</a>  
+            </p>
+          </div>
+          <div class="primary_block">
+            <h2>Professional</h2>
+            <p>
+              Interested in exploring interview and speaking engagement. If you think there's anything else
+              that might interest me, feel free to send them my way too! DMs on the platforms above works
+              fine but here's my email if you prefer.
+            </p>
+            <p>
+              <a class="link" href="mailto:binhong%40binhong.me">Email</a>
+              <a class="link" href="https://pgp.mit.edu/pks/lookup?op=get&search=0x6B4C5608EC620D19">PGP key</a>
+            </p>
+          </div>
+        </details>
+        <footer>
+          <div class="primary_block footer">
+            <a href="https://rubjo.github.io/victor-mono/"><p>Font: Victor Mono Font</p></a>
+          </div>
+        </footer>
       </div>
     </div>
   </body>
