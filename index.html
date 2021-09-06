@@ -7,12 +7,18 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <details class="dark_mode_toggle" role="button" open>
-      <summary></summary>
+    <details class="dark_mode_toggle" role="button">
+      <summary>
+        <div class="content">
+          <div class="secondary_block">
+            <p class="name-title">BinHong Lee</p>
+          </div>
+        </div>
+      </summary>
     </details>
     <div class="wrapper">
       <div class="content">
-        <div class="primary_block" style="vertical-align: middle;">
+        <div class="primary_block bio">
           <div class="image_block">
             <img
               class="profile_img"
@@ -24,8 +30,7 @@
               "
             />
           </div>
-          <div class="secondary_block bio">
-            <h1>BinHong Lee</h1>
+          <div class="secondary_block">
             <p>
               👋 I'm a 🇲🇾 Software Engineer currently based in the Bay Area. You might know me from working
               at FB (Search -> Dating -> Login), or previously at Apple (Siri).
@@ -59,97 +64,100 @@
       </div>
       <div class="content">
         <details role="button" open>
-          <summary><h1>Side projects</h1></summary>
+          <summary><p class="section_title">Side projects</p></summary>
           <div class="primary_block projects">
-            <div class="active">
-              <h2 class="row">Actively working</h2>
+            <div class="primary_block active">
+              <p class="sub_section_title row">Actively working</p>
               <a href="https://globetrotte.com">
                 <div class="row">
-                  <h3>GlobeTrotte</h3>
-                  <h4>[Go TypeScript VueJS]</h4>
+                  <p class="name">GlobeTrotte</p>
+                  <p class="lang">[Go TypeScript VueJS]</p>
                 </div>
-                <p>Simple travel itinerary crowdsourcing platform.</p>
+                <p class="desc">Simple travel itinerary crowdsourcing platform.</p>
               </a>
               <a href="https://wings.sh">
                 <div class="row">
-                  <h3>wings</h3>
-                  <h4>[nim]</h4>
+                  <p class="name">wings</p>
+                  <p class="lang">[nim]</p>
                 </div>
-                <p>Customizable cross language code generator (for struct, enum, interface, logger etc.).</p>
+                <p class="desc">Customizable cross language code generator (for struct, enum, interface, logger etc.).</p>
               </a>
             </div>
-            <div class="deprecated">
-              <h2 class="row">Old stuffs (probably still works but badly 🙃)</h2>
+            <div class="primary_block deprecated">
+              <p class="sub_section_title row">Deprecated 🙃</p>
               <a href="https://breakups.life">
                 <div class="row">
-                  <h3>Breakups</h3>
-                  <h4>[node.js ReactJS]</h4>
+                  <p class="name">Breakups</p>
+                  <p class="lang">[node.js ReactJS]</p>
                 </div>
-                <p>Webapp for bill splitting among multiple people.</p>
+                <p class="desc">Webapp for bill splitting among multiple people.</p>
               </a>
               <a href="https://github.com/binhonglee/dota2-random">
                 <div class="row">
-                  <h3>Dota2-Random</h3>
-                  <h4>[node.js]</h4>
+                  <p class="name">Dota2-Random</p>
+                  <p class="lang">[node.js]</p>
                 </div>
-                <p>An Alexa skill that returns a random hero based on the given parameters.</p>
+                <p class="desc">An Alexa skill that returns a random hero based on the given parameters.</p>
               </a>
               <a href="https://github.com/binhonglee/dota2-random">
                 <div class="row">
-                  <h3>LibrarySystem</h3>
-                  <h4>[Java Kotlin]</h4>
+                  <p class="name">LibrarySystem</p>
+                  <p class="lang">[Java Kotlin]</p>
                 </div>
-                <p>An app for managing a physical library.</p>
+                <p class="desc">An app for managing a physical library.</p>
               </a>
               <a href="https://github.com/binhonglee/TextCalculation">
                 <div class="row">
-                  <h3>TextCalculation</h3>
-                  <h4>[Java]</h4>
+                  <p class="name">TextCalculation</p>
+                  <p class="lang">[Java]</p>
                 </div>
-                <p>Calculator that takes in words instead of numbers.</p>
+                <p class="desc">Calculator that takes in words instead of numbers.</p>
               </a>
             </div>
           </div>
         </details>
         <details role="button">
-          <summary><h1>Contact</h1></summary>
-          <div class="primary_block">
-            <div class="row">
-              <h2>Personal</h2>
-            </div>
-            <p>
-              Open for anything from casual chat to mentorship. Feel free to drop me a DM on any of these
-              platforms. I can't promise to be the most responsive but I'll do my best to respond asap. If
-              you don't hear back in like 3 days, definitely ping me again!
-            </p>
-            <div class="row">
-              <p>
-                <a class="link" href="https://www.facebook.com/messages/t/1258869258">Facebook</a>
-                <a class="link" href="https://twitter.com/binhonglee">Twitter</a>
-                <a class="link" href="https://instagram.com/binhonglee">Instagram</a>  
+          <summary><p class="section_title">Contact</p></summary>
+          <div class="primary_block contacts">
+            <div class="primary_block">
+              <p class="sub_section_title row">Personal</p>
+              <p class="desc">
+                Open for anything from casual chat to mentorship. Feel free to drop me a DM on any of these
+                platforms. I can't promise to be the most responsive but I'll do my best to respond asap. If
+                you don't hear back in like 3 days, definitely ping me again!
               </p>
+              <div class="row">
+                <p>
+                  <a class="link" href="https://www.facebook.com/messages/t/1258869258">Facebook</a>
+                  <a class="link" href="https://twitter.com/binhonglee">Twitter</a>
+                  <a class="link" href="https://instagram.com/binhonglee">Instagram</a>  
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="primary_block">
-            <div class="row">
-              <h2>Professional</h2>
-            </div>
-            <p>
-              Interested in exploring interview and speaking engagement. If you think there's anything else
-              that might interest me, feel free to send them my way too! DMs on the platforms above works
-              fine but here's my email if you prefer.
-            </p>
-            <div class="row">
-              <p>
-                <a class="link" href="mailto:binhong%40binhong.me">Email</a>
-                <a class="link" href="https://pgp.mit.edu/pks/lookup?op=get&search=0x6B4C5608EC620D19">PGP key</a>
+            <div class="primary_block">
+              <p class="sub_section_title row">Professional</p>
+              <p class="desc">
+                Interested in exploring interview and speaking engagement. If you think there's anything else
+                that might interest me, feel free to send them my way too! DMs on the platforms above works
+                fine but here's my email if you prefer.
               </p>
+              <div class="row">
+                <p>
+                  <a class="link" href="mailto:binhong%40binhong.me">Email</a>
+                  <a class="link" href="https://pgp.mit.edu/pks/lookup?op=get&search=0x6B4C5608EC620D19">PGP key</a>
+                </p>
+              </div>
             </div>
           </div>
         </details>
         <footer>
           <div class="primary_block footer">
-            <a href="https://rubjo.github.io/victor-mono/"><p>Font: Victor Mono Font</p></a>
+            <div class="row">
+              <p>Font:</p>
+              <a href="https://rubjo.github.io/victor-mono/" class="name">
+                Victor Mono Font
+              </a>  
+            </div>
           </div>
         </footer>
       </div>
