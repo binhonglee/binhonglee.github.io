@@ -4,7 +4,7 @@
 }
 
 html {
-  font-family: VictorMono;
+  font-family: Roboto, VictorMono;
   font-size: 150%;
 }
 
@@ -174,8 +174,12 @@ footer .name {
 
 .row {
   display: block;
-  padding: 15px 0;
+  padding: 10px 0;
   width: 100%;
+}
+
+.block {
+  padding: 15px 0;
 }
 
 .secondary_block {
