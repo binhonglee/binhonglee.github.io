@@ -3,27 +3,28 @@
   <head>
     <link data-rh="true" rel="shortcut icon" href="images/profile.png" type="image/x-icon">
     <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=0.75">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="profile">
     <meta property="og:url" content="https://binhong.me">
     <meta property="og:site_name" content="BinHong Lee">
     <meta property="og:title" content="BinHong Lee">
-    <meta property="og:description" content="👋 I'm a 🇲🇾 Software Engineer currently based in the Bay Area. You might know me from working at FB (Search -> Dating -> Login), or previously at Apple (Siri).">
+    <meta property="og:description" content="👋 I'm a 🇲🇾 Software Engineer currently based in the Bay Area.">
     <meta property="og:image" content="https://binhong.me/images/profile.png">
     <meta property="og:profile:first_name" content="BinHong">
     <meta property="og:profile:last_name" content="Lee">
     <meta property="og:username" content="binhong">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:description" content="👋 I'm a 🇲🇾 Software Engineer currently based in the Bay Area. You might know me from working at FB (Search -> Dating -> Login), or previously at Apple (Siri).">
+    <meta name="twitter:description" content="👋 I'm a 🇲🇾 Software Engineer currently based in the Bay Area.">
     <meta name="twitter:title" content="BinHong Lee">
     <meta name="twitter:image" content="https://binhong.me/images/profile.png">
-    <meta name="twitter:image:alt" content=" Commissioned image icon of me coding with a pair of black headphones on while sitting on a pink bean bag wearing a light blue hoodie. The laptop is purple with a bunch of mostly MLH demo stickers on it.">
+    <meta name="twitter:image:alt" content="Commissioned image icon of me coding with a pair of black headphones on while sitting on a pink bean bag wearing a light blue hoodie. The laptop is purple with a bunch of mostly MLH demo stickers on it.">
     <meta name="twitter:site" content="@binhonglee">
     <title>BinHong Lee</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <details class="dark_mode_toggle" role="button">
+    <details class="dark_mode_toggle" role="button" open>
       <summary>
         <div class="content">
           <div class="secondary_block">
@@ -34,13 +35,10 @@
     </details>
     <div class="wrapper">
       <div class="content">
-        <div class="links">
+        <div class="header_links">
+          <a class="link" href="https://binhong.me/">About</a>
+          <p>|</p>
           <a class="link" href="https://binhong.me/blog">Blog</a>
-          <a class="link" href="https://timeline.binhong.me">Polywork</a>
-          <a class="link" href="https://keybase.io/binhonglee">Keybase</a>
-          <a class="link" href="https://twitter.com/binhonglee">Twitter</a>
-          <a class="link" href="https://github.com/binhonglee">GitHub</a>
-          <a class="link" href="https://linkedin.com/in/binhonglee">LinkedIn</a>
         </div>
         <div class="primary_block bio">
           <div class="image_block">
@@ -78,9 +76,16 @@
             </p>
           </div>
         </div>
+        <div class="links">
+          <a class="link" href="https://timeline.binhong.me">Polywork</a>
+          <a class="link" href="https://keybase.io/binhonglee">Keybase</a>
+          <a class="link" href="https://twitter.com/binhonglee">Twitter</a>
+          <a class="link" href="https://github.com/binhonglee">GitHub</a>
+          <a class="link" href="https://linkedin.com/in/binhonglee">LinkedIn</a>
+        </div>
       </div>
       <div class="content">
-        <details role="button" open>
+        <details role="button" open id="projects">
           <summary><p class="section_title">Side projects</p></summary>
           <div class="primary_block projects">
             <div class="primary_block active">
@@ -145,16 +150,19 @@
             </div>
           </div>
         </details>
-        <details role="button">
+        <details role="button" open id="contact">
           <summary><p class="section_title">Contact</p></summary>
           <div class="primary_block contacts">
             <div class="primary_block">
-              <p class="sub_section_title row">Personal</p>
-              <p class="desc">
-                Open for anything from casual chat to mentorship. Feel free to drop me a DM on any of these
-                platforms. I can't promise to be the most responsive but I'll do my best to respond asap. If
-                you don't hear back in like 3 days, definitely ping me again!
-              </p>
+              <p class="sub_section_title row" id="personal">Personal</p>
+              <div class="row">
+                <p class="desc">Open for anything from casual chat to mentorship.</p>
+                <p class="desc">
+                  Feel free to drop me a DM on any of these
+                  platforms. I can't promise to be the most responsive but I'll do my best to respond asap.
+                  If you don't hear back in like 3 days, definitely ping me again!
+                </p>
+              </div>
               <div class="row">
                 <p>
                   <a class="link" href="https://www.facebook.com/messages/t/1258869258">Facebook</a>
@@ -164,12 +172,8 @@
               </div>
             </div>
             <div class="primary_block">
-              <p class="sub_section_title row">Professional</p>
-              <p class="desc">
-                Interested in exploring interview and speaking engagement. If you think there's anything else
-                that might interest me, feel free to send them my way too! DMs on the platforms above works
-                fine but here's my email if you prefer.
-              </p>
+              <p class="sub_section_title row" id="professional">Professional</p>
+              <p class="desc">Interested in exploring interview and speaking engagement. If you think there's anything else that might interest me, feel free to send them my way too! DMs on the platforms above works fine but here's my email if you prefer.</p>
               <div class="row">
                 <p>
                   <a class="link" href="mailto:binhong%40binhong.me">Email</a>
@@ -182,10 +186,13 @@
         <footer>
           <div class="primary_block footer">
             <div class="row">
-              <p>Font:</p>
-              <a href="https://rubjo.github.io/victor-mono/" class="name">
-                Victor Mono Font
-              </a>  
+              <a href="https://github.com/tonsky/FiraCode/" rel="noopener" target="_blank" class="name">Font (Fira Code)</a>
+              <p>|</p>
+              <a class="name" href="https://github.com/binhonglee/binhonglee.github.io">Source (GitHub)</a>
+            </div>
+            <div class="row">
+              <p>&copy; 2021</p>
+              <a class="name" href="https://binhong.me">BinHong Lee</a>
             </div>
           </div>
         </footer>

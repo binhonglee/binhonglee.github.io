@@ -1,11 +1,11 @@
 @font-face {
-  font-family: VictorMono;
-  src: url(./font/VictorMono/VictorMono-Regular.woff2);
+  font-family: FiraCode;
+  src: url(./font/FiraCode/FiraCode-Regular.woff2);
 }
 
 html {
-  font-family: Roboto, VictorMono;
-  font-size: 150%;
+  font-family: FiraCode;
+  font-size: 130%;
 }
 
 body {
@@ -13,15 +13,15 @@ body {
 }
 
 :root {
-  --default-background: white;
-  --default-color: black;
+  --default-background: #FBFAF5;
+  --default-color: #181A18;
   --default-links: darkgreen;
   --default-active: navy;
   --default-deprecated: darkred;
   --default-footer-a: goldenrod;
 
-  --dark-background: black;
-  --dark-color: white;
+  --dark-background: #181A18;
+  --dark-color: #FBFAF5;
   --dark-links: lawngreen;
   --dark-active: cyan;
   --dark-deprecated: deeppink;
@@ -64,7 +64,7 @@ p {
   padding: 0;
   margin: 0;
   display: inline-block;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 p > .link {
@@ -73,11 +73,13 @@ p > .link {
 
 .wrapper {
   min-height: 100vh;
+  background-color: var(--default-background);
+  color: var(--default-color);
 }
 
 .dark_mode_toggle {
   position: absolute;
-  padding-top: 60px;
+  margin-top: 65px;
   width: 100%;
   z-index: 1;
 }
@@ -111,8 +113,8 @@ p > .link {
   color: var(--default-color);
 }
 
-.content, .footer {
-  max-width: 800px;
+.content {
+  max-width: 950px;
   padding: 10px;
   text-align: left;
   margin: auto;
@@ -123,6 +125,10 @@ p > .link {
   padding: 20px 0;
   margin-top: -10px;
   justify-content: space-between;
+}
+
+.header_links p {
+  padding-right: 5px;
 }
 
 .link {
@@ -144,11 +150,12 @@ footer a {
   color: var(--dark-color);
 }
 
-.active .name {
+.bio a, .active .name {
   color: var(--default-active);
 }
 
-.dark_mode_toggle[open] + div .active .name {
+.dark_mode_toggle[open] + div .active .name,
+.dark_mode_toggle[open] + div .bio a {
   color: var(--dark-active);
 }
 
@@ -187,11 +194,15 @@ footer .name {
   display: inline-block;
   margin-top: -10px;
   vertical-align: top;
-  max-width: 550px;
+  max-width: 600px;
 }
 
 .bio .secondary_block {
-  margin-top: 75px;
+  margin-top: 60px;
+}
+
+.bio p {
+  margin: 12px 0;
 }
 
 .primary_block {
@@ -206,11 +217,10 @@ footer .name {
 }
 
 .name {
-  font-size: 120%;
+  font-size: 35px;
 }
 
 .name-title {
-  padding-top: 20px;
   font-size: 200%;
 }
 
@@ -219,11 +229,7 @@ footer .name {
 }
 
 .sub_section_title {
-  font-size: 150%;
-  padding-top: 0;
-}
-
-.projects .desc {
+  font-size: 35px;
   padding-top: 0;
 }
 
@@ -232,5 +238,54 @@ footer .row {
 }
 
 .contacts .desc {
-  font-size: 85%;
+  max-height: 200px;
+}
+
+@media screen and (max-width: 850px) {
+  .bio .secondary_block {
+    padding: 0 10px;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .dark_mode_toggle .secondary_block  {
+    padding-top: 80px;
+    margin-left: 220px;
+
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .dark_mode_toggle .secondary_block {
+    margin-left: 35%;
+    margin-top: 10%;
+    padding: 0;
+    max-width: 60%;
+  }
+
+  .links {
+    justify-content:left;
+    overflow: scroll;
+  }
+
+  .links .link {
+    padding-left: 20px;
+  }
+  
+
+  .name-title {
+    font-size: 1.5em;
+  }
+
+  .profile_img {
+    border-radius: 50%;
+    width: 30%;
+    height: 30%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .dark_mode_toggle .secondary_block {
+    margin-top: 0;
+  }
 }
