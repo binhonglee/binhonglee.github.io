@@ -1,8 +1,3 @@
-@font-face {
-  font-family: FiraCode;
-  src: url(./font/FiraCode/FiraCode-Regular.woff2);
-}
-
 html {
   font-family: FiraCode;
   font-size: 130%;

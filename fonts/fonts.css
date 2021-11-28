@@ -1,0 +1,14 @@
+@font-face {
+  font-family: VictorMono;
+  src: url(VictorMono/VictorMono-Regular.woff);
+}
+
+@font-face {
+  font-family: SourceSans3;
+  src: url(SourceSans3/SourceSans3-Regular.ttf.woff2);
+}
+
+@font-face {
+  font-family: FiraCode;
+  src: url(FiraCode/FiraCode-Regular.woff2);
+}
