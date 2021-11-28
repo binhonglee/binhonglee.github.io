@@ -177,7 +177,7 @@ footer .name {
 
 .image_block {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .row {
@@ -193,8 +193,9 @@ footer .name {
 .secondary_block {
   display: inline-block;
   margin-top: -10px;
+  margin-right: 10px;
   vertical-align: top;
-  max-width: 600px;
+  max-width: 700px;
 }
 
 .bio .secondary_block {
