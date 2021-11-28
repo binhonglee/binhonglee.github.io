@@ -1,0 +1,135 @@
+:root {
+  --image-size: 200px;
+}
+
+.dark_mode_toggle .secondary_block {
+  margin-left: var(--image-size);
+  opacity: 1.0;
+  padding-left: 20px;
+}
+
+.image_block {
+  display: inline-block;
+  margin-top: 40px;
+}
+
+.profile_img {
+  border-radius: 50%;
+  width: var(--image-size);
+  height: var(--image-size);
+}
+
+.block {
+  padding: 15px 0;
+}
+
+.bio .secondary_block {
+  display: inline-block;
+  margin-top: -10px;
+  margin-right: 10px;
+  vertical-align: top;
+  max-width: 700px;
+  margin-top: 40px;
+}
+
+.bio p {
+  margin: 12px 0;
+}
+
+.bio .secondary_block p,
+.bio .secondary_block h1 {
+  margin: 5px 0;
+}
+
+.links {
+  display: flex;
+  padding: 20px 0;
+  margin-top: -10px;
+  justify-content: space-between;
+}
+
+.header_links p {
+  padding-right: 5px;
+}
+
+.link {
+  color: var(--default-links);
+}
+
+.dark_mode_toggle[open] .link,
+.dark_mode_toggle[open] + div .link {
+  color: var(--dark-links);
+}
+
+.bio a {
+  color: var(--default-active);
+}
+
+.dark_mode_toggle[open] + div .bio a {
+  color: var(--dark-active);
+}
+
+.dark_mode_toggle[open] .link,
+.dark_mode_toggle[open] + div .link {
+  color: var(--dark-links);
+}
+
+.projects a,
+footer a {
+  color: var(--default-color);
+}
+
+.dark_mode_toggle[open] + div .projects a,
+.dark_mode_toggle[open] + div footer a {
+  color: var(--dark-color);
+}
+
+.bio a, .active .name {
+  color: var(--default-active);
+}
+
+.dark_mode_toggle[open] + div .active .name,
+.dark_mode_toggle[open] + div .bio a {
+  color: var(--dark-active);
+}
+
+.deprecated .name {
+  color: var(--default-deprecated);
+}
+
+.dark_mode_toggle[open] + div .deprecated .name {
+  color: var(--dark-deprecated);
+}
+
+footer .name {
+  color: var(--default-footer-a);
+}
+
+.dark_mode_toggle[open] + div footer .name {
+  color: var(--dark-footer-a);
+}
+
+.section_title {
+  font-size: 32px;
+}
+
+.sub_section_title {
+  font-size: 30px;
+  padding-bottom: 0;
+}
+
+.name {
+  font-size: 28px;
+}
+
+#projects summary {
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .bio .secondary_block {
+    padding: 0 10px;
+    margin: 0;
+    max-width: 100%;
+  }
+}
