@@ -1,5 +1,6 @@
 :root {
   --image-size: 200px;
+  --start-margin: 50px;
 }
 
 .dark_mode_toggle .secondary_block {
@@ -10,7 +11,7 @@
 
 .image_block {
   display: inline-block;
-  margin-top: 40px;
+  margin-top: var(--start-margin);
 }
 
 .profile_img {
@@ -25,11 +26,9 @@
 
 .bio .secondary_block {
   display: inline-block;
-  margin-top: -10px;
-  margin-right: 10px;
   vertical-align: top;
-  max-width: 700px;
-  margin-top: 40px;
+  max-width: 690px;
+  margin-top: var(--start-margin);
 }
 
 .bio p {
@@ -41,15 +40,11 @@
   margin: 5px 0;
 }
 
-.links {
+.external_links {
   display: flex;
   padding: 20px 0;
   margin-top: -10px;
   justify-content: space-between;
-}
-
-.header_links p {
-  padding-right: 5px;
 }
 
 .link {
@@ -122,14 +117,46 @@ footer .name {
   font-size: 28px;
 }
 
+.contact_links {
+  display: flex;
+  overflow: scroll;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.contact_links::-webkit-scrollbar {
+  display: none;
+}
+
 #projects summary {
   padding-bottom: 10px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 965px) {
   .bio .secondary_block {
-    padding: 0 10px;
     margin: 0;
     max-width: 100%;
+  }
+
+  .image_block {
+    width: 100%;
+    text-align: center;
+  }
+
+  .name_title {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .external_links {
+    justify-content: left;
+    overflow: scroll;
+  }
+
+  .external_links .link {
+    padding: 0 10px;
   }
 }

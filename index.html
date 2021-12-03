@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <link data-rh="true" rel="shortcut icon" href="images/profile.png" type="image/x-icon">
     <meta charset="utf-8">
@@ -37,6 +37,7 @@
     </details>
     <div class="wrapper">
       <div class="content">
+        <details class="dropdown_toggle" role="button"><summary>+</summary></details>
         <div class="header_links">
           <a class="link" href="https://binhong.me/">About</a>
           <p>|</p>
@@ -45,23 +46,25 @@
           <a class="link" href="https://binhong.me/threads">Threads</a>
         </div>
         <div class="primary_block bio">
-          <div class="image_block">
-            <img
-              class="profile_img"
-              src="images/profile.png"
-              alt="
-                Commissioned image icon of me coding with a pair of black headphones on while sitting on a pink
-                bean bag wearing a light blue hoodie. The laptop is purple with a bunch of mostly MLH demo
-                stickers on it.
-              "
-            />
-          </div>
-          <div class="secondary_block">
-            <h1>BinHong Lee</h1>
-            <p>
-              👋 I'm a 🇲🇾 Software Engineer currently based in the Bay Area. You might know me from working
-              at FB (Search -> Dating -> Login), or previously at Apple (Siri).
-            </p>
+          <div class="primary_block">
+            <div class="image_block">
+              <img
+                class="profile_img"
+                src="images/profile.png"
+                alt="
+                  Commissioned image icon of me coding with a pair of black headphones on while sitting on a pink
+                  bean bag wearing a light blue hoodie. The laptop is purple with a bunch of mostly MLH demo
+                  stickers on it.
+                "
+              />
+            </div>
+            <div class="secondary_block">
+              <h1 class="name_title">BinHong Lee</h1>
+              <p>
+                👋 I'm a 🇲🇾 Software Engineer currently based in the Bay Area. You might know me from working
+                at FB (Search -> Dating -> Login), or previously at Apple (Siri).
+              </p>
+            </div>
           </div>
           <div class="primary_block">
             <p>
@@ -81,7 +84,7 @@
             </p>
           </div>
         </div>
-        <div class="links">
+        <div class="external_links">
           <a class="link" href="https://timeline.binhong.me">Polywork</a>
           <a class="link" href="https://keybase.io/binhonglee">Keybase</a>
           <a class="link" href="https://twitter.com/binhonglee">Twitter</a>
@@ -102,6 +105,15 @@
                     <p>[Go TypeScript VueJS]</p>
                   </div>
                   <p class="texts">Simple travel itinerary crowdsourcing platform.</p>
+                </a>
+              </div>
+              <div class="block">
+                <a href="https://pkg.go.dev/github.com/binhonglee/kdlgo">
+                  <div class="row">
+                    <p class="name">kdlgo</p>
+                    <p>[Go KDL]</p>
+                  </div>
+                  <p class="texts">Go parser for the KDL Document Language.</p>
                 </a>
               </div>
               <div class="block">
@@ -167,7 +179,7 @@
                   If you don't hear back in like 3 days, definitely ping me again!
                 </p>
                 <div class="row">
-                  <p>
+                  <p class="contact_links">
                     <a class="link" href="https://www.facebook.com/messages/t/1258869258">Facebook</a>
                     <a class="link" href="https://twitter.com/binhonglee">Twitter</a>
                     <a class="link" href="https://instagram.com/binhonglee">Instagram</a>
@@ -184,7 +196,7 @@
                   but here's my email if you prefer.
                 </p>
                 <div class="row">
-                  <p>
+                  <p class="contact_links">
                     <a class="link" href="mailto:binhong%40binhong.me">Email</a>
                     <a class="link" href="https://pgp.mit.edu/pks/lookup?op=get&search=0x6B4C5608EC620D19">PGP key</a>
                   </p>
