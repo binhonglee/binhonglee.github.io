@@ -42,7 +42,7 @@
 
 .external_links {
   display: flex;
-  padding: 20px 0;
+  padding: 15px 20px 5px 20px;
   margin-top: -10px;
   justify-content: space-between;
 }
@@ -72,6 +72,10 @@
 .projects a,
 footer a {
   color: var(--default-color);
+}
+
+.content details {
+  padding-top: 20px;
 }
 
 .dark_mode_toggle[open] + div .projects a,
