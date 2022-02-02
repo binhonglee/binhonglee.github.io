@@ -37,13 +37,13 @@
     </details>
     <div class="wrapper">
       <div class="content dropdown">
-        <button class="dropdown_toggle">+</button>
-        <div class="header_links">
-          <a class="link" href="https://binhong.me/">About</a>
+        <button class="dropdown_toggle" aria-haspopup="true" aria-controls="dropdown_menu" id="dropdown_toggle">+</button>
+        <div class="header_links" id="dropdown_menu" aria-labelledby="dropdown_toggle" role="menu">
+          <a class="link" href="https://binhong.me/" role="menuitem">About</a>
           <p>|</p>
-          <a class="link" href="https://binhong.me/blog">Blog</a>
+          <a class="link" href="https://binhong.me/blog" role="menuitem">Blog</a>
           <p>|</p>
-          <a class="link" href="https://binhong.me/threads">Threads</a>
+          <a class="link" href="https://binhong.me/threads" role="menuitem">Threads</a>
         </div>
       </div>
       <div class="content">
