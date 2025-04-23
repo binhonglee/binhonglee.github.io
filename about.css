@@ -11,7 +11,7 @@
 
 .image_block {
   display: inline-block;
-  margin-top: var(--start-margin);
+  vertical-align: middle;
 }
 
 .profile_img {
@@ -24,14 +24,18 @@
   padding: 15px 0;
 }
 
-.bio .secondary_block {
-  display: inline-block;
-  vertical-align: top;
-  max-width: 690px;
+.bio .top_block {
   margin-top: var(--start-margin);
 }
 
+.bio .secondary_block {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 690px;
+}
+
 .bio p {
+  font-family: SourceSans3;
   margin: 12px 0;
 }
 
@@ -42,13 +46,21 @@
 
 .external_links {
   display: flex;
-  padding: 15px 20px 5px 20px;
+  padding: 10px 0 0 10px;
   margin-top: -10px;
   justify-content: space-between;
 }
 
 .link {
   color: var(--default-links);
+}
+
+p > .link {
+  margin-right: 0;
+}
+
+.contact_links > .link {
+  margin-right: 40px;
 }
 
 .dark_mode_toggle[open] .link,
@@ -120,11 +132,11 @@ footer .name {
 }
 
 .section_title {
-  font-size: 32px;
+  font-size: 36px;
 }
 
 .sub_section_title {
-  font-size: 30px;
+  font-size: 28px;
   padding-bottom: 0;
 }
 
@@ -146,6 +158,10 @@ footer .name {
 
 #projects summary {
   padding-bottom: 10px;
+}
+
+.texts {
+  font-family: SourceSans3;
 }
 
 @media screen and (max-width: 965px) {
