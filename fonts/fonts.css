@@ -12,3 +12,8 @@
   font-family: FiraCode;
   src: url(FiraCode/FiraCode-Regular.woff2);
 }
+
+@font-face {
+  font-family: Vollkorn;
+  src: url(Vollkorn/Vollkorn-Regular.woff2);
+}
