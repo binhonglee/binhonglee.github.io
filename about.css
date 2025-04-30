@@ -35,7 +35,7 @@
 }
 
 .bio p {
-  font-family: SourceSans3;
+  font-family: Vollkorn;
   margin: 12px 0;
 }
 
@@ -106,6 +106,10 @@ footer a {
   color: var(--dark-active);
 }
 
+.dark_mode_toggle[open] + div .name_title, .name_title {
+  color: unset;
+}
+
 .deprecated .name {
   color: var(--default-deprecated);
 }
@@ -123,7 +127,7 @@ footer .name {
 }
 
 .links_page .content {
-  font-family: SourceSans3;
+  font-family: Vollkorn;
 }
 
 .links_page ul {
@@ -161,7 +165,7 @@ footer .name {
 }
 
 .texts {
-  font-family: SourceSans3;
+  font-family: Vollkorn;
 }
 
 @media screen and (max-width: 965px) {
