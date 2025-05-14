@@ -46,7 +46,7 @@
 
 .external_links {
   display: flex;
-  padding: 10px 0 0 10px;
+  padding: 10px 10px 0;
   margin-top: -10px;
   justify-content: space-between;
 }
