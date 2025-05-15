@@ -1,42 +1,48 @@
-var key = 'dark-theme';
-var key = 'dark-theme';
-var dark = 'dark';
-var light = 'light';
-var locked = true;
-var initial_toggle = false;
-var darkModeToggle = document.getElementsByClassName("dark_mode_toggle")[0];
+const darkThemeKey = 'dark-theme';
+const lastSetKey = 'last-set';
+const dark = 'dark';
+const light = 'light';
+let locked = true;
+let initialToggle = false;
+const darkModeToggle = document.getElementsByClassName("dark_mode_toggle")[0];
 
 darkModeToggle.addEventListener("toggle", function () {
-  if (initial_toggle) {
-    initial_toggle = false;
+  if (initialToggle) {
+    initialToggle = false;
     return;
   }
 
   if (!locked) {
-    const current = localStorage.getItem(key);
-    var newVal = dark;
-    if (current === newVal) {
-      newVal = light;
-    }
-    localStorage.setItem(key, newVal);
+    const current = darkModeToggle.open ? dark : light;
+    localStorage.setItem(darkThemeKey, current);
+    localStorage.setItem(lastSetKey, (new Date()).toISOString());
   }
 })
 
 window.onload = function () {
-  if (localStorage.getItem(key)) {
-    if (localStorage.getItem(key) === light) {
-      initial_toggle = true;
+  if (localStorage.getItem(darkThemeKey) && localStorage.getItem(lastSetKey)) {
+    if (isToday(localStorage.getItem(lastSetKey)) && localStorage.getItem(darkThemeKey) === light) {
+      initialToggle = true;
       darkModeToggle.open = false;
     }
     locked = false;
     return;
   }
 
-  let dark_mode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  if (!dark_mode) {
+  let light_mode = window.matchMedia('(prefers-color-scheme: light)').matches;
+  if (light_mode) {
+    initialToggle = true
     darkModeToggle.open = false;
-    initial_toggle = true
-    localStorage.setItem(key, light);
   }
   locked = false;
 };
+
+function isToday(datestring) {
+  const date = new Date(datestring)
+  const today = new Date();
+  return (
+    date.getDate() === today.getDate() &&
+    date.getMonth() === today.getMonth() &&
+    date.getFullYear() === today.getFullYear()
+  );
+}
