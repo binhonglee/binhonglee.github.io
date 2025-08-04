@@ -63,8 +63,7 @@ p > .link {
   margin-right: 40px;
 }
 
-.dark_mode_toggle[open] .link,
-.dark_mode_toggle[open] + div .link {
+#darkModeToggle:checked~div  .link {
   color: var(--dark-links);
 }
 
@@ -72,13 +71,12 @@ p > .link {
   color: var(--default-active);
 }
 
-.dark_mode_toggle[open] + div .bio a,
-.dark_mode_toggle[open] + div .links_page a p {
+#darkModeToggle:checked~div  .bio a,
+#darkModeToggle:checked~div  .links_page a p {
   color: var(--dark-active);
 }
 
-.dark_mode_toggle[open] .link,
-.dark_mode_toggle[open] + div .link {
+#darkModeToggle:checked~div  .link {
   color: var(--dark-links);
 }
 
@@ -91,8 +89,8 @@ footer a {
   padding-top: 20px;
 }
 
-.dark_mode_toggle[open] + div .projects a,
-.dark_mode_toggle[open] + div footer a {
+#darkModeToggle:checked~div  .projects a,
+#darkModeToggle:checked~div  footer a {
   color: var(--dark-color);
 }
 
@@ -100,13 +98,13 @@ footer a {
   color: var(--default-active);
 }
 
-.dark_mode_toggle[open] + div .active .name,
-.dark_mode_toggle[open] + div .links_page a p, 
-.dark_mode_toggle[open] + div .bio a {
+#darkModeToggle:checked~div  .active .name,
+#darkModeToggle:checked~div  .links_page a p, 
+#darkModeToggle:checked~div  .bio a {
   color: var(--dark-active);
 }
 
-.dark_mode_toggle[open] + div .name_title, .name_title {
+#darkModeToggle:checked~div  .name_title, .name_title {
   color: unset;
 }
 
@@ -114,7 +112,7 @@ footer a {
   color: var(--default-deprecated);
 }
 
-.dark_mode_toggle[open] + div .deprecated .name {
+#darkModeToggle:checked~div  .deprecated .name {
   color: var(--dark-deprecated);
 }
 
@@ -122,7 +120,7 @@ footer .name {
   color: var(--default-footer-a);
 }
 
-.dark_mode_toggle[open] + div footer .name {
+#darkModeToggle:checked~div  footer .name {
   color: var(--dark-footer-a);
 }
 

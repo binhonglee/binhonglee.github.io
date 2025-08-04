@@ -3,27 +3,21 @@ const lastSetKey = 'last-set';
 const dark = 'dark';
 const light = 'light';
 let locked = true;
-let initialToggle = false;
 const darkModeToggle = document.getElementsByClassName("dark_mode_toggle")[0];
 
-darkModeToggle.addEventListener("toggle", function () {
-  if (initialToggle) {
-    initialToggle = false;
-    return;
-  }
-
+darkModeToggle.addEventListener("change", function () {
   if (!locked) {
-    const current = darkModeToggle.open ? dark : light;
+    const current = darkModeToggle.checked ? dark : light;
     localStorage.setItem(darkThemeKey, current);
     localStorage.setItem(lastSetKey, (new Date()).toISOString());
   }
 })
 
 window.onload = function () {
+  darkModeToggle.checked = true;
   if (localStorage.getItem(darkThemeKey) && localStorage.getItem(lastSetKey)) {
     if (isToday(localStorage.getItem(lastSetKey)) && localStorage.getItem(darkThemeKey) === light) {
-      initialToggle = true;
-      darkModeToggle.open = false;
+      darkModeToggle.checked = false;
     }
     locked = false;
     return;
@@ -31,8 +25,7 @@ window.onload = function () {
 
   let light_mode = window.matchMedia('(prefers-color-scheme: light)').matches;
   if (light_mode) {
-    initialToggle = true
-    darkModeToggle.open = false;
+    darkModeToggle.checked = false;
   }
   locked = false;
 };
