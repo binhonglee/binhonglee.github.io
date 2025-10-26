@@ -16,11 +16,13 @@ darkModeToggle.addEventListener("change", function () {
 window.onload = function () {
   darkModeToggle.checked = true;
   if (localStorage.getItem(darkThemeKey) && localStorage.getItem(lastSetKey)) {
-    if (isToday(localStorage.getItem(lastSetKey)) && localStorage.getItem(darkThemeKey) === light) {
-      darkModeToggle.checked = false;
+    if (isToday(localStorage.getItem(lastSetKey))) {
+      if (localStorage.getItem(darkThemeKey) === light) {
+        darkModeToggle.checked = false;
+      }
+      locked = false;
+      return;
     }
-    locked = false;
-    return;
   }
 
   let light_mode = window.matchMedia('(prefers-color-scheme: light)').matches;
